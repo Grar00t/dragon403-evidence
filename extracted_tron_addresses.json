@@ -1,5 +1,14 @@
-{
-  "source": "/home/kali/evidence/GEMINI_EVIDENCE/extracted/FRAUD_FINANCIAL_REPORT.txt",
-  "valid": [],
-  "invalid": []
+﻿{
+    "status":  "Active Investigation",
+    "source":  "Forensic Extraction from kali_evidence (March 24 2026)",
+    "valid_tron_addresses":  [
+                                 "TCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu",
+                                 "Tf7rkg7L6TuTtyMGs5xe1dJEPsOyggnhLa",
+                                 "TRyz6SjiPcHVNh8JLrf5vOVZKGSJb4mjTF",
+                                 "TuDAOIbYAj7JoD4vutLdgYBxDfAEPZNAPF",
+                                 "TuSCebQRIvNR3qzAReKfJ7LtSjoUY8gqeJ",
+                                 "TvywOOaMlXDiRkNSiBJ8kYCV8WY5zmsin3",
+                                 "TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW"
+                             ],
+    "total_found":  33
 }

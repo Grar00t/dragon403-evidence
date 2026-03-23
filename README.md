@@ -262,3 +262,15 @@ No unauthorized access to private systems was performed. This evidence is provid
 🐾
 
 </div>
+
+## ⛓️ TRON Network — Victim Funnel Addresses
+The following TRON (TRC20) addresses have been extracted from the Hawa/Yoho/Famy recruitment layer and are used to move victim funds before they hit the Ethereum Ghost Admin.
+
+| Address | Network | Role |
+|---------|---------|------|
+| `TCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu` | TRON | High-Volume Funnel |
+| `TRyz6SjiPcHVNh8JLrf5vOVZKGSJb4mjTF` | TRON | Asset Collector |
+| `TuDAOIbYAj7JoD4vutLdgYBxDfAEPZNAPF` | TRON | Exit Node Proxy |
+| `TuSCebQRIvNR3qzAReKfJ7LtSjoUY8gqeJ` | TRON | Intermediary Wallet |
+
+Full list available in `extracted_tron_addresses.json`.
