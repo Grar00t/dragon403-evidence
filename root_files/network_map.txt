@@ -1,0 +1,13 @@
+adm-5688.apiboli.com: 43.152.32.139
+adm-api-33356.apifalla.com: 43.152.32.139
+adm-api-33356.fallalite.com: 43.152.32.139
+adm-api-33356.joymi.live: 162.62.220.91
+adm-api-33356.taeal.live: 43.152.32.139
+adm-api-33356.toofun.live: 43.152.32.139
+apihk.falla.live: 101.32.56.240
+testapi.apiboli.com: 43.152.32.139
+testapi.apifolo.com: 101.32.56.240
+testapi.fallalite.com: 101.32.56.240
+testapi.joymi.live: 43.135.111.159
+testapi.taeal.live: 43.152.32.139
+web.falla.liveapiconfig: web.falla.liveapiconfigtest: 

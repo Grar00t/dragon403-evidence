@@ -1,0 +1,27 @@
+**Title:** Critical IDOR in Nawafeth Platform Allows Unauthorized Access to Sensitive Finance Applications and Documents
+**Vulnerability Type:** Insecure Direct Object Reference (IDOR) / Broken Access Control
+**Severity:** CRITICAL (P1)
+**Target:** nawafeth.monshaat.gov.sa
+
+**Description:**
+Dear Monsha'at Security Team,
+
+During my security assessment of the Nawafeth platform, I discovered a highly critical Insecure Direct Object Reference (IDOR) vulnerability. The application fails to properly validate authorization when accessing user-uploaded documents and finance application details via the API endpoints.
+
+By simply changing the `[PARAMETER_NAME]` parameter (e.g., from `1001` to `1002`) in the intercepted Burp Suite request, an authenticated attacker with a standard user account can view, download, and potentially modify highly sensitive files (IDs, Commercial Registers, Financial Statements) belonging to other registered companies and citizens.
+
+**Steps to Reproduce (PoC):**
+1. Log in to the Nawafeth platform with a standard user account (Attacker Account).
+2. Navigate to the uploaded documents or finance application section.
+3. Click to view or download a document belonging to the attacker account.
+4. Intercept the request using Burp Suite. The request will look similar to this:
+   `GET /api/v1/documents/download?id=[ATTACKER_ID] HTTP/1.1`
+5. Change the `id` value to the ID of a different user/company (`[VICTIM_ID]`).
+6. Forward the request.
+7. Observe that the server responds with a `200 OK` and leaks the victim's sensitive document/data.
+
+**Impact:**
+This is a massive data breach vulnerability. An attacker could write a simple script to enumerate all sequential IDs and download the entire repository of sensitive financial and personal documents submitted to Monsha'at, leading to severe privacy violations and identity theft.
+
+**Mitigation:**
+Implement strict access control checks on the server-side. Before serving any requested object/file based on user input (like an ID), the backend must verify that the currently authenticated session (user) is the true owner or has explicit authorization to access that specific object.

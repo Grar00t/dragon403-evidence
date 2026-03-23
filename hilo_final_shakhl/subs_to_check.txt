@@ -1,0 +1,7 @@
+ws.hiloconn.com
+promethues.hiloconn.com
+grafana.hiloconn.com
+goploy.hiloconn.com
+api.hiloconn.com
+teenpatti.hiloconn.com
+www.hiloconn.com

@@ -1,0 +1,9 @@
+creds.txt
+flynas_*
+sadad_*
+refund_config_leak.txt
+ffuf_results.json
+js_loot.txt
+SULAIMAN_RETRIBUTION_LOG.txt
+*.pyc
+__pycache__/

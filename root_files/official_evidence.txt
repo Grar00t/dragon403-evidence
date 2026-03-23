@@ -1,0 +1,11 @@
+--- IP: 43.152.32.139 ---
+descr:          6 COLLYER QUAY
+descr:          ACE
+--- IP: 101.32.56.240 ---
+descr:          16 COLLYER QUAY
+descr:          ACEVILLE PTE.LTD.
+--- IP: 162.62.220.91 ---
+Organization:   Asia Pacific Network Information Centre (APNIC)
+Country:        AU
+descr:          16 COLLYER QUAY # 18-29 INCOME AT RAFFLES
+descr:          ACEVILLEPTELTD-SG

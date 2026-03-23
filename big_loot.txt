@@ -1,0 +1,295 @@
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/flynas.com/v2.0/.well-known/openid-configuration ["1cec92f6-5859-4f6a-b76e-9f14529924a2"]
+[cookies-without-httponly] [javascript] [info] dashboard.flynas.com ["AWSALB","AWSALBCORS"]
+[cookies-without-httponly] [javascript] [info] dashboard2.flynas.com ["AWSALBCORS","AWSALB"]
+[cookies-without-httponly] [javascript] [info] portal.flynas.com ["TS0180455d"]
+[cookies-without-httponly] [javascript] [info] chatbot.flynas.com ["AWSALB","AWSALBCORS"]
+[cookies-without-httponly] [javascript] [info] ecrewaz.flynas.com ["ApplicationGatewayAffinityCORS","ApplicationGatewayAffinity"]
+[cookies-without-httponly] [javascript] [info] eopsaz.flynas.com ["ApplicationGatewayAffinityCORS","ApplicationGatewayAffinity"]
+[cookies-without-secure] [javascript] [info] chatbot.flynas.com ["AWSALB"]
+[cookies-without-secure] [javascript] [info] dashboard2.flynas.com ["AWSALB"]
+[cookies-without-secure] [javascript] [info] portal.flynas.com ["TS0180455d"]
+[cookies-without-secure] [javascript] [info] dashboard.flynas.com ["AWSALB"]
+[cookies-without-secure] [javascript] [info] eopsaz.flynas.com ["ApplicationGatewayAffinity"]
+[cookies-without-secure] [javascript] [info] ecrewaz.flynas.com ["ApplicationGatewayAffinity"]
+[iis-shortname-detect] [http] [info] https://eopsaz.flynas.com/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] https://ecrewaz.flynas.com/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] https://eopsaz.flynas.com/97du0jzu*~1*/a.aspx
+[iis-shortname-detect] [http] [info] https://ecrewaz.flynas.com/97du0jzu*~1*/a.aspx
+[iis-shortname-detect] [http] [info] https://eopsaz.flynas.com/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] https://ecrewaz.flynas.com/*~1*/a.aspx
+[unauthenticated-varnish-cache-purge] [http] [low] https://mb.flynas.com
+[keycloak-openid-config] [http] [info] https://clerk.groups.flynas.com/.well-known/openid-configuration
+[missing-sri] [http] [info] https://dashboard.flynas.com/ ["https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700"]
+[missing-sri] [http] [info] https://groups.flynas.com/ ["https://clerk.groups.flynas.com/npm/@clerk/clerk-js@5.52.0/dist/clerk.browser.js"]
+[missing-sri] [http] [info] https://uat-apps.flynas.com/ ["https://fastly.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js","https://fastly.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js","https://fastly.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js","https://fastly.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"]
+[jwk-json-leak] [http] [info] https://clerk.groups.flynas.com/.well-known/jwks.json
+[http-missing-security-headers:content-security-policy] [http] [info] https://accounts.groups.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://accounts.groups.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://accounts.groups.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://career.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://career.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://career.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://career.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://portal.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://expo2020.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://expo2020.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://expo2020.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://expo2020.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://static.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://static.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://static.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://static.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://oicdev.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://oicprod.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://clerk.groups.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://mb.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://go.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://go.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://go.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://go.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://go.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://k.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://k.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://k.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://k.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://k.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://k.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://dashboard.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://chatbot.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://dashboard2.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://test-booking.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://eopsaz.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://uat-api.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://ecrewaz.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://test.nsp.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://survey.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:clear-site-data] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:content-security-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:permissions-policy] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://apexprod.flynas.com/ords/_/landing
+[http-missing-security-headers:x-frame-options] [http] [info] https://groups.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://groups.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:clear-site-data] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:content-security-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:permissions-policy] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://apexdev.flynas.com/ords/_/landing
+[http-missing-security-headers:x-frame-options] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://track.newsletter.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:content-security-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:x-content-type-options] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:clear-site-data] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:permissions-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:x-frame-options] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:referrer-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://help.flynas.com/en
+[http-missing-security-headers:content-security-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://uat1-api.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://help.flynas.com
+[http-missing-security-headers:content-security-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://help.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://help.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://help.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://help.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://help.flynas.com
+[http-missing-security-headers:content-type-charset-specification] [http] [info] https://help.flynas.com
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:strict-transport-security] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:permissions-policy] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:x-frame-options] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:x-content-type-options] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:referrer-policy] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:clear-site-data] [http] [info] https://uat-apps.flynas.com
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://uat-apps.flynas.com
+[fastly-debug-headers:fastly-debug-path] [http] [info] https://mb.flynas.com
+[fastly-debug-headers:fastly-debug-ttl] [http] [info] https://mb.flynas.com
+[fastly-debug-headers:fastly-debug-digest] [http] [info] https://mb.flynas.com
+[xss-deprecated-header] [http] [info] https://chatbot.flynas.com ["1; mode=block"]
+[weak-csp-detect:unsafe-default-src] [http] [info] https://dashboard.flynas.com ["default-src 'unsafe-eval' 'unsafe-inline' 'self' * https://*.oriserve.com https://*.oriserve.in https://*.flynas.com; frame-ancestors 'self' https://*.oriserve.com https://*.oriserve.in https://*.flynas.com; img-src 'self' data: https:; worker-src 'self' blob:; child-src 'self' https://*.oriserve.com https://*.oriserve.in https://*.flynas.com blob:"]
+[csp-script-src-wildcard] [http] [info] https://uat-apps.flynas.com
+[weak-csp-detect:unsafe-script-src] [http] [info] https://uat-apps.flynas.com ["default-src 'self' https: localhost:*; img-src 'self' https: localhost:* blob: data:; script-src 'self' https: localhost:* 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: localhost:* 'unsafe-inline'; font-src 'self' https: localhost:* data:; connect-src 'self' https: wss: localhost:*; worker-src 'self' blob: https: localhost:*; child-src 'self' blob: https: localhost:*;"]
+[weak-csp-detect:unsafe-default-src] [http] [info] https://uat-apps.flynas.com ["default-src 'self' https: localhost:*; img-src 'self' https: localhost:* blob: data:; script-src 'self' https: localhost:* 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: localhost:* 'unsafe-inline'; font-src 'self' https: localhost:* data:; connect-src 'self' https: wss: localhost:*; worker-src 'self' blob: https: localhost:*; child-src 'self' blob: https: localhost:*;"]
+[weak-csp-detect:unsafe-script-src] [http] [info] https://groups.flynas.com ["script-src 'self' https://clerk.groups.flynas.com https://challenges.cloudflare.com 'nonce-5f52f313bd8e7421db0d90abfd7f53d3' 'unsafe-eval' blob:; object-src 'none'; img-src 'self' https://img.clerk.com data:; frame-ancestors 'self'; frame-src 'self' https://challenges.cloudflare.com; form-action 'self';  upgrade-insecure-requests;  block-all-mixed-content; base-uri 'self';"]
+[missing-cookie-samesite-strict] [http] [info] https://book.flynas.com ["__cf_bm=hbJbSEj5h4oZOmVbJ4o93NfWFW0IK3SLcDgrArjPpHA-1772281697-1.0.1.1-uOOPmPIJYFz49sJBufM_U9fUGH6OgA1oqsV7MCixvH1XB0zabb8euw1VLxfREqne5puiYaPzCB82v42.4kliEnuDJTF4pj6DpYmDCSBfiRE; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://flynas.com ["__cf_bm=PK2XNxP3_vV_FhK6Uuc2sPYcZZBSxyRmsIrHRVG_V1k-1772281697-1.0.1.1-aeZpjnFky.MfEOqveToZFJ.n20VXO4DGI9hfa.HTpKRhJIMJhDC0P4B86zupPqHRsEV9Ovkg2z3pUiVde1CognyXlrKMKSuJK48_TG4rttg; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://nasmiles.flynas.com ["__cf_bm=4IKWiX0f6tvblMveBzv41FmGZaWnyz3oGHStFQSpU4c-1772281697-1.0.1.1-BPtu4i.IbpbVayirPE_mpoqC.WUNIKGPZENgftZ.1qM0ltoCzwa1YAh_UMDfnsp7fo9u2Dk_HjIWI3PU6QX.tL_TvMDYZJwDe2.33so6_CE; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://portal.flynas.com ["TS0180455d=01042864c51da7423f7758df430c0cce93f9b92e705084703cb07d94d20dfadd85de52ad57891a78cf1514e6e2389384aed5995695; Path=/; Domain=.portal.flynas.com"]
+[missing-cookie-samesite-strict] [http] [info] https://accounts.groups.flynas.com ["__cf_bm=ZW7ojTJLNhg20YeN1sZBGhqsvRLRaTfzCnk_szmGznU-1772281697-1.0.1.1-AKYez8bdd7082rnia7uE6hgev80uuo8UEUIBqKVJ6ArnRpHL789_ZjmFiBbwU63XkS7YRxUS8O5Wqs_2nnG8w8IfSDA5Dee9sG3ti7pQGHs; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.accounts.groups.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://static.flynas.com ["__cf_bm=YUHdqhB4h5IFCGWCj7NYPlV949EEL66aeTDDhioiObc-1772281697-1.0.1.1-3sZA5GKMrbbpPazF3pXUstmTXieNIYD0WawGMA1cE4E.oBE4ywkVDm_k4o.jadNq3JKPEPTCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu9Ss; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://expo2020.flynas.com ["__cf_bm=MTUXWNji3KDf5ascCba7.R4xzFM8YDfEuwBehhuDKCQ-1772281697-1.0.1.1-znhyiv1tjixR80PRANDDyWS86em9hgiazwALlNrKxoj6d3wrp9y9bChpfbx_HkP8rmXIc8Ek2VtqutQKSHnjUIHuqWTN9gvtRmRbiFv7UWE; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://career.flynas.com ["__cf_bm=xZwW1HVUOPMmdAfmjyv62GGMRTr2ZiCJ_jihB1ZyXYE-1772281697-1.0.1.1-X8LAaJrQPCBqsNh8An68RJPVWrLA9UZUxZrdqvqXlYo1.BlIblo3M7vk2v9WUjcAUd5zYzvWu.lzBSvngoR1X5BmC.JpPxsHZzEjhtLpJxc; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://clerk.groups.flynas.com ["__cf_bm=dBoiP4JTbL0sbj0RiVprgG85qQC7l0vjBnLXkEAo5qs-1772281697-1.0.1.1-zIhWXEjRq5iCNTEC86jF3CFA1z54rUPlTF_91oDRdgRuRmyvgea.RVrIU6ubutxDEsLrr.0rVrLd6e5ym5GjZic3vU_T3oXF25tpwnEfxes; path=/; expires=Sat, 28-Feb-26 12:58:17 GMT; domain=.clerk.groups.flynas.com; HttpOnly; Secure; SameSite=None _cfuvid=to13D.YWnpC7BxV2fWxUpow.1SBIEn66j233bM3qewY-1772281697274-0.0.1.1-604800000; path=/; domain=.clerk.groups.flynas.com; HttpOnly; Secure; SameSite=None"]
+[missing-cookie-samesite-strict] [http] [info] https://dashboard2.flynas.com ["AWSALB=IFfYWVxwJfkXoSy9xj0gfj43phlOFkXP5kzm3B6ouSiSWzoLRK1fK80195jkRxrlzp5LgRsfhgPLrFNztNVHJmshB6G70V1VAXz/KSBzgR0uipdKJUw8mhHTidqR; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/ AWSALBCORS=IFfYWVxwJfkXoSy9xj0gfj43phlOFkXP5kzm3B6ouSiSWzoLRK1fK80195jkRxrlzp5LgRsfhgPLrFNztNVHJmshB6G70V1VAXz/KSBzgR0uipdKJUw8mhHTidqR; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/; SameSite=None; Secure"]
+[missing-cookie-samesite-strict] [http] [info] https://chatbot.flynas.com ["AWSALB=9sucMzLh2wYFWHh8UakPg2Hb5J9L2UTHmFoC0zNrtaVdAutJ6tPfSBY3P9yKtS2TQ6kppp3RGxAW+GAroc+cvnL4nfEK9IcQf8CdEDF0zMhJOKyuh7lkeJg19UZt; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/ AWSALBCORS=9sucMzLh2wYFWHh8UakPg2Hb5J9L2UTHmFoC0zNrtaVdAutJ6tPfSBY3P9yKtS2TQ6kppp3RGxAW+GAroc+cvnL4nfEK9IcQf8CdEDF0zMhJOKyuh7lkeJg19UZt; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/; SameSite=None; Secure"]
+[missing-cookie-samesite-strict] [http] [info] https://eopsaz.flynas.com ["ApplicationGatewayAffinityCORS=869d3f59688f67818b821db275b1ac70; Path=/; SameSite=None; Secure ApplicationGatewayAffinity=869d3f59688f67818b821db275b1ac70; Path=/"]
+[missing-cookie-samesite-strict] [http] [info] https://ecrewaz.flynas.com ["ApplicationGatewayAffinityCORS=869d3f59688f67818b821db275b1ac70; Path=/; SameSite=None; Secure ApplicationGatewayAffinity=869d3f59688f67818b821db275b1ac70; Path=/"]
+[missing-cookie-samesite-strict] [http] [info] https://dashboard.flynas.com ["AWSALB=IM/CTa0++241HbhcSOT1pOJNNXJ2pNAkGbhq0TjBh9Jee/kT/CR0hKauf3F3TV1iT5C7AnGp/l/73eOD7XOd1gZmb9C9gPG3j2smNdA/5hiur6BAWe92NDStSium; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/ AWSALBCORS=IM/CTa0++241HbhcSOT1pOJNNXJ2pNAkGbhq0TjBh9Jee/kT/CR0hKauf3F3TV1iT5C7AnGp/l/73eOD7XOd1gZmb9C9gPG3j2smNdA/5hiur6BAWe92NDStSium; Expires=Sat, 07 Mar 2026 12:28:17 GMT; Path=/; SameSite=None; Secure"]

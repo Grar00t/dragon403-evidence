@@ -1,0 +1,265 @@
+══════════════════════════════════════════════════════════════════════════════════
+                    تقرير التحليل الجنائي الرقمي الشامل
+                    COMPREHENSIVE DIGITAL FORENSIC REPORT
+                    
+    المحقق: سليمان (Sulaiman)
+    التاريخ: 2 مارس 2026
+    أدوات التحليل: Kali Linux, ffuf, nuclei, subfinder, Copilot AI
+══════════════════════════════════════════════════════════════════════════════════
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 1: ملخص تنفيذي (EXECUTIVE SUMMARY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+تم اكتشاف شبكة تطبيقات مترابطة تعمل تحت كيان واحد هو:
+    ACEVILLE PTE. LTD. (سنغافورة)
+    العنوان: 6/16 Collyer Quay, #18-29, Income at Raffles, Singapore
+
+الشبكة تدير منصات تواصل اجتماعي/ميديا تستهدف الشرق الأوسط وتتضمن:
+  - بنية تحتية إدارية مخفية (Admin Panels)
+  - بوابات دفع متعددة (Payment Gateways)
+  - أنظمة قمار مدمجة (Teen Patti / Gambling)
+  - تطبيقات متعددة بنفس البنية والسيرفرات
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 2: خريطة الشبكة (NETWORK MAP)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[2.1] السيرفرات المركزية (ALL hosted on Tencent Cloud):
+
+  IP: 43.152.32.139 (المركز الرئيسي - Tencent HK/SG)
+  ├── adm-5688.apiboli.com        ← لوحة التحكم الرئيسية
+  ├── adm-api-33356.apifalla.com  ← API الإدارة
+  ├── adm-api-33356.fallalite.com
+  ├── adm-api-33356.taeal.live
+  ├── adm-api-33356.toofun.live
+  ├── testapi.apiboli.com         ← API الاختبار
+  └── testapi.taeal.live
+
+  IP: 101.32.56.240 (Tencent)
+  ├── apihk.falla.live            ← API هونغ كونغ
+  ├── testapi.apifolo.com
+  └── testapi.fallalite.com
+
+  IP: 162.62.220.91 (Tencent - APNIC)
+  └── adm-api-33356.joymi.live
+
+  IP: 43.135.111.159 (Tencent)
+  └── testapi.joymi.live
+
+[2.2] WHOIS Registration:
+  IP 43.152.32.139 → "6 COLLYER QUAY" - "ACE"
+  IP 101.32.56.240 → "16 COLLYER QUAY" - "ACEVILLE PTE.LTD."
+  IP 162.62.220.91 → "16 COLLYER QUAY # 18-29 INCOME AT RAFFLES" - "ACEVILLEPTELTD-SG"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 3: التطبيقات المترابطة (LINKED APPLICATIONS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+كل هذه التطبيقات تعمل على نفس البنية وتديرها نفس الشركة:
+
+  1. Falla (فلة)        → falla.live, fallalive.com, fallaweb.com, apifalla.com
+  2. Falla Lite          → fallalite.com
+  3. JoyMi               → joymi.live, joymiweb.com
+  4. Taeal (تعال)        → taeal.live
+  5. TooFun              → toofun.live
+  6. Boli                → boli.live, apiboli.com
+  7. YiGo                → yigolive.com
+  8. Hilo / HiloConn     → hiloconn.com
+
+[3.1] Falla Subdomains المكتشفة:
+  - adm.yinguo.falla.live    (لوحة إدارة)
+  - api-prod.falla.live      (API الإنتاج)
+  - api-test.falla.live      (API الاختبار)  
+  - web.falla.live           (الموقع)
+  - webf.falla.live          (Frontend)
+  - adm-api-33356.falla.live (API الإدارة)
+  - falla-szf.falla.live     
+  - ludosrv.falla.live       (سيرفر ألعاب Ludo)
+  - activity.falla.live      (الفعاليات)
+  - ssr.falla.live           (Server-Side Rendering)
+
+[3.2] HiloConn Subdomains:
+  - hiloconn.com
+  - www.hiloconn.com
+  - api.hiloconn.com
+  - ws.hiloconn.com          (WebSocket)
+  - v.hiloconn.com           (Video)
+  - image.hiloconn.com       (CDN)
+  - grafana.hiloconn.com     (مراقبة - Grafana)
+  - promethues.hiloconn.com  (مراقبة - Prometheus)
+  - goploy.hiloconn.com      (نظام النشر - Goploy)
+  - teenpatti.hiloconn.com   (قمار - Teen Patti)
+  - test.teenpatti.hiloconn.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 4: الأدلة المالية (FINANCIAL EVIDENCE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[4.1] بوابات الدفع المكتشفة (Payment Gateways):
+  - https://adm-5688.apiboli.com/gateway
+  - https://adm-5688.apiboli.com/payment
+  - https://adm-5688.apiboli.com/payment_gateway
+  - https://adm-5688.apiboli.com/payments
+  - https://adm-5688.apiboli.com/pay
+  - https://adm-5688.apiboli.com/paypal
+  - https://adm-5688.apiboli.com/paypalcancel
+  - https://adm-5688.apiboli.com/paypal_notify
+  - https://adm-5688.apiboli.com/m6 (نظام فواتير)
+  - https://adm-5688.apiboli.com/m6_invoice
+  - https://adm-5688.apiboli.com/m6_pay
+  - https://testapi.apiboli.com/recharge (شحن رصيد)
+  - https://testapi.apiboli.com/worldpayreturn
+  - https://web.falla.live/pay
+
+[4.2] صفحة الدفع في Falla:
+  URL: https://web.fallalive.com/pay
+  الحجم: 21,277 bytes (صفحة كاملة مع نظام دفع)
+  
+[4.3] القمار (Gambling - Teen Patti):
+  - teenpatti.hiloconn.com     ← نطاق فرعي مخصص للقمار
+  - test.teenpatti.hiloconn.com ← بيئة اختبار القمار
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 5: لوحة التحكم المكشوفة (ADMIN PANEL EXPOSURE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[5.1] العنوان الصيني: 运营平台 (منصة التشغيل/العمليات)
+
+[5.2] البنية التقنية:
+  - Framework: ICE (Alibaba ICE/icestark) - Microfrontend Architecture
+  - CDN: Akamai (ak.v:39, ak.cp:1312878)
+  - Frontend: https://webf.fallalive.com/falla-admin/parent-layout/prod/
+  - Static: https://static.fallaweb.com/
+  - API Key (Akamai): RKK97-ZYKKS-3XWKW-XZQEX-357XY
+
+[5.3] أنظمة فرعية داخل لوحة التحكم (من تحليل JS):
+  - /business     → إدارة الأعمال
+  - /wed          → نظام Wed
+  - /childAdmin   → نظام فرعي (Port 4444)
+  - /childChat    → IM خدمة العملاء (Port 4500)
+  - /childTranslate → نظام الترجمة (Port 4555)
+  - /appAdminJoyMi  → إدارة JoyMi (Port 4600)
+  - /appAdminYiGo   → إدارة YiGo (Port 4700)
+  - /appAdminTooFun → إدارة TooFun (Port 4800)
+  - /appAdminFallaLite → إدارة FallaLite (Port 4900)
+  - /appAdminTaeal  → إدارة Taeal (Port 5000)
+
+[5.4] الملف المسرب leaked_keys.txt (362 KB):
+  → JavaScript Bundle كامل للوحة التحكم الرئيسية (chunk-vendors + index)
+  → يحتوي على منطق المصادقة، القوائم، التكوين، وكل بنية النظام الداخلية
+
+[5.5] Refund Microfrontend مكشوف:
+  URL: refund_config_leak.txt
+  → "@app/refund" microfrontend في وضع "integrated" مع تعليمات تفعيل devtools
+  → يمكن تفعيل: localStorage.setItem('devtools', true)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 6: نقاط الضعف والاكتشافات (VULNERABILITIES)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[6.1] Falla/FallaLive:
+  - /pay       → صفحة دفع مكشوفة (200 OK, 21KB)
+  - /upload.json → ملف تكوين الرفع مكشوف (200 OK, JSON)
+  - /prod      → بيئة الإنتاج مكشوفة
+  - /pre       → بيئة ما قبل الإنتاج مكشوفة
+  - /form      → نماذج مكشوفة
+  - /main      → الصفحة الرئيسية (10KB)
+  - /invite    → نظام الدعوات مكشوف
+
+[6.2] HiloConn:
+  - /action    → مسار إجراءات (301)
+  - /css, /js  → أصول ثابتة مكشوفة
+  - /policy    → صفحة السياسات
+  - Goploy API → {"code":1,"message":"No such method"} ← API مكشوف
+  - Grafana    → نظام مراقبة
+  - Prometheus → نظام مقاييس
+
+[6.3] لوحة الإدارة (adm-5688.apiboli.com):
+  - 140+ مسار admin مكتشف (phpMyAdmin, phpmyadmin, dbadmin, etc.)
+  - /dashboard, /database_administration
+  - /phpmyadmin, /phpMyAdmin, /pgadmin
+  - /directadmin, /fileadmin
+  - إلخ... (القائمة الكاملة في FRAUD_FINANCIAL_REPORT.txt)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 7: ملخص الملفات والأدلة (EVIDENCE FILES INVENTORY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ المصدر: /home/kali/ (24 ملف رئيسي)
+┌─────────────────────────────────┬──────────┬─────────────────────────────────────┐
+│ الملف                           │ الحجم    │ الوصف                               │
+├─────────────────────────────────┼──────────┼─────────────────────────────────────┤
+│ final_hilo_falla_clean.txt      │ 459 KB   │ 8,061 رابط نظيف (الدليل الأساسي)   │
+│ js_loot.txt                     │ 2.3 MB   │ JavaScript مسرب من التطبيقات       │
+│ SULAIMAN_RETRIBUTION_LOG.txt    │ 1.9 MB   │ سجل العمليات الكامل                │
+│ FINAL_EXPOSURE_REPORT.txt       │ 1.8 MB   │ تقرير الكشف النهائي               │
+│ findings_amazonaws.com.txt      │ 1.5 MB   │ اكتشافات AWS                       │
+│ falla_admin.js                  │ 354 KB   │ كود لوحة التحكم كامل (JS)          │
+│ all_clean_targets.txt           │ 371 KB   │ كل الأهداف النظيفة                │
+│ FRAUD_FINANCIAL_REPORT.txt      │ 8.5 KB   │ تقرير الاحتيال المالي              │
+│ sensitive_shakhl.json           │ 4.2 KB   │ نتائج فحص الملفات الحساسة          │
+│ scan_falla.py                   │ 3.3 KB   │ سكربت الفحص الرئيسي               │
+│ scan_hiloconn.py                │ 2.7 KB   │ سكربت فحص HiloConn                │
+│ contradiction_check.txt         │ 3.3 KB   │ تحليل التناقضات                    │
+│ big_loot.txt                    │ 33 KB    │ نتائج Nuclei scan                  │
+│ Targets_Summary.md              │ 4.3 KB   │ ملخص الأهداف                       │
+└─────────────────────────────────┴──────────┴─────────────────────────────────────┘
+
+ المصدر: /root/ (9 ملفات + 3 مجلدات)
+┌─────────────────────────────────┬──────────┬─────────────────────────────────────┐
+│ الملف                           │ الحجم    │ الوصف                               │
+├─────────────────────────────────┼──────────┼─────────────────────────────────────┤
+│ leaked_keys.txt                 │ 354 KB   │ JS Bundle كامل (لوحة التحكم)       │
+│ admin_logic.js                  │ 354 KB   │ منطق الإدارة (JS كامل)             │
+│ hilo_report.html                │ 6.2 KB   │ تقرير Hilo بـ HTML                  │
+│ adm_env.txt                     │ 5.5 KB   │ HTML لوحة التحكم + Akamai config   │
+│ hidden_apis.txt                 │ 1.5 KB   │ 51 API مخفي                         │
+│ network_map.txt                 │ 504 B    │ خريطة IP ↔ Domain                  │
+│ official_evidence.txt           │ 370 B    │ بيانات WHOIS (Aceville)            │
+│ llama_forensics.py              │ 2.3 KB   │ سكربت تحليل بـ AI                  │
+│ hilo_dissection/                │ مجلد     │ تشريح تطبيق Hilo                    │
+│ hilo_final_shakhl/              │ مجلد     │ نتائج فحص HiloConn النهائية        │
+│ target_shakhl/                  │ مجلد     │ نتائج فحص falla.live                │
+└─────────────────────────────────┴──────────┴─────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 8: الملفات الأهم للرفع (FILES TO SUBMIT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+الأولوية القصوى (ترفع أولاً):
+  1. final_hilo_falla_clean.txt    ← 8,061 رابط مرتبط بالشبكة
+  2. FRAUD_FINANCIAL_REPORT.txt    ← أدلة بوابات الدفع والإدارة
+  3. FULL_FORENSIC_REPORT.txt      ← هذا التقرير
+  4. falla_admin.js                ← كود لوحة التحكم (أقوى دليل)
+
+الأولوية العالية:
+  5. js_loot.txt                   ← JavaScript مسرب
+  6. sensitive_shakhl.json         ← ملفات حساسة مكشوفة
+  7. network_map.txt               ← خريطة الشبكة + IPs
+  8. official_evidence.txt         ← بيانات WHOIS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ القسم 9: الخلاصة والتوصيات
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[الخلاصة]
+شركة ACEVILLE PTE. LTD. تدير شبكة من 8+ تطبيقات تواصل اجتماعي/ميديا
+على بنية تحتية صينية (Tencent Cloud) مع:
+  - بوابات دفع (PayPal, Worldpay, Recharge, M6)
+  - أنظمة قمار (Teen Patti)
+  - لوحة تحكم إدارية مركزية واحدة تتحكم بكل التطبيقات
+  - 140+ مسار إداري مكشوف
+  - Microfrontend architecture بتقنية Alibaba ICE
+
+[التوصيات]
+  1. تقديم بلاغ لـ CITC (هيئة الاتصالات السعودية) بالأدلة
+  2. تقديم بلاغ لـ Cloudflare Abuse عن المحتوى المخالف
+  3. تقديم بلاغ لـ Tencent Cloud Abuse عن الاستضافة
+  4. الاحتفاظ بكل الأدلة بشكل آمن (kali_evidence/)
+
+══════════════════════════════════════════════════════════════════════════════════
+                         نهاية التقرير
+                    Generated by Copilot AI Analysis
+                          2 مارس 2026
+══════════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,10 @@
+adm.yinguo.falla.live
+falla.live
+api-prod.falla.live
+api-test.falla.live
+api.falla.live
+web.falla.live
+webf.falla.live
+adm-api-33356.falla.live
+falla-szf.falla.live
+ludosrv.falla.live
