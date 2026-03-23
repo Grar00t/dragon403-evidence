@@ -1,4 +1,4 @@
-creds.txt
+﻿creds.txt
 flynas_*
 sadad_*
 refund_config_leak.txt
@@ -7,3 +7,7 @@ js_loot.txt
 SULAIMAN_RETRIBUTION_LOG.txt
 *.pyc
 __pycache__/
+sensitive_shakhl.json
+findings_amazonaws.com.txt
+IDOR_Template_Monshaat.txt
+MinIO_Vulnerability_Report.txt
