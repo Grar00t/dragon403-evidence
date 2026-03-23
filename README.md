@@ -8,7 +8,7 @@
 
 [![Case Status](https://img.shields.io/badge/Case-ACTIVE-red)]()
 [![Victims](https://img.shields.io/badge/Victims-2%2C000+-critical)]()
-[![Losses](https://img.shields.io/badge/Losses-600%2C000+%20SAR-red)]()
+[![Losses](https://img.shields.io/badge/Losses-Millions%20to%20Billions%20SAR-red)]()
 [![Filed With](https://img.shields.io/badge/Filed-FBI%20%7C%20FTC%20%7C%20CISA%20%7C%20Europol%20%7C%20Interpol-blue)]()
 [![License](https://img.shields.io/badge/License-Public%20Evidence-green)]()
 
@@ -18,7 +18,7 @@
 
 ## Overview
 
-This repository contains raw forensic evidence collected during the investigation of a **Chinese-operated pig-butchering fraud network** targeting Gulf Arab victims through fake social/dating applications (**HILO**, **FALLA**, **VoChat**) and a fraudulent cryptocurrency token (**HILO Token V2** on Ethereum).
+This repository contains raw forensic evidence collected during the investigation of a **Chinese-operated pig-butchering fraud network** targeting Gulf Arab victims through fake social/dating applications (**HILO**, **FALLA**, **VoChat**, **Hawa**, **Yoho**, **Famy**, and others) and a fraudulent cryptocurrency token (**HILO Token V2** on Ethereum). Confirmed losses exceed **millions of SAR** and may reach **billions** across the full network of interconnected apps.
 
 The investigation was conducted by **Sulaiman Alshammari (Dragon403)** of **KHAWRIZM Forensic Labs**, Riyadh, Kingdom of Saudi Arabia.
 
@@ -26,7 +26,7 @@ The investigation was conducted by **Sulaiman Alshammari (Dragon403)** of **KHAW
 
 ## نظرة عامة
 
-يحتوي هذا المستودع على أدلة جنائية رقمية خام تم جمعها خلال التحقيق في **شبكة احتيال صينية** تستهدف ضحايا الخليج العربي عبر تطبيقات اجتماعية مزيفة (**HILO**، **FALLA**، **VoChat**) وعملة رقمية احتيالية (**HILO Token V2** على شبكة Ethereum).
+يحتوي هذا المستودع على أدلة جنائية رقمية خام تم جمعها خلال التحقيق في **شبكة احتيال صينية** تستهدف ضحايا الخليج العربي عبر تطبيقات اجتماعية مزيفة (**HILO**، **FALLA**، **VoChat**، **Hawa**، **Yoho**، **Famy** وغيرها) وعملة رقمية احتيالية (**HILO Token V2** على شبكة Ethereum). الخسائر المؤكدة تتجاوز **الملايين** من الريالات السعودية وقد تصل إلى **المليارات** عبر كامل شبكة التطبيقات المترابطة.
 
 التحقيق أجراه **سليمان الشمري (Dragon403)** من **مختبرات خوارزم الجنائية**، الرياض، المملكة العربية السعودية.
 
@@ -35,25 +35,23 @@ The investigation was conducted by **Sulaiman Alshammari (Dragon403)** of **KHAW
 ## The Fraud Network
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    ACEVILLE PTE LTD                          │
-│                  (Singapore Entity)                          │
-│                                                             │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌────────────┐  │
-│  │  HILO    │  │  FALLA   │  │  VoChat  │  │  HILO      │  │
-│  │  App     │  │  App     │  │  App     │  │  Token V2  │  │
-│  │ (Dating) │  │ (Social) │  │ (Voice)  │  │ (Ethereum) │  │
-│  └────┬─────┘  └────┬─────┘  └────┬─────┘  └─────┬──────┘  │
-│       │             │             │               │         │
-│       └─────────────┴─────────────┘               │         │
-│                     │                             │         │
-│            Pig-Butchering                  Token Fraud       │
-│            (Social Engineering)           (Smart Contract)   │
-│                     │                             │         │
-│                     ▼                             ▼         │
-│              2,000+ Victims                Ghost Admin       │
-│              600,000+ SAR                 (0xB843F5...)     │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│                       ACEVILLE PTE LTD (Singapore)                  │
+│                                                                      │
+│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌──────┐ ┌──────┐     │
+│  │  HILO  │ │ FALLA  │ │ VoChat │ │  Hawa  │ │ Yoho │ │ Famy │ ... │
+│  │(Dating)│ │(Social)│ │(Voice) │ │(Social)│ │(Chat)│ │(Chat)│     │
+│  └───┬────┘ └───┬────┘ └───┬────┘ └───┬────┘ └──┬───┘ └──┬───┘     │
+│      └──────────┴──────────┴──────────┴─────────┴────────┘          │
+│                              │                                       │
+│                    Pig-Butchering Network          ┌────────────┐   │
+│                   (Social Engineering +             │ HILO Token │   │
+│                    Financial Fraud)                 │ V2 (ERC-20)│   │
+│                              │                     └─────┬──────┘   │
+│                              ▼                           ▼          │
+│                      2,000+ Victims              Ghost Admin        │
+│                  Millions → Billions SAR          (0xB843F5...)      │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
