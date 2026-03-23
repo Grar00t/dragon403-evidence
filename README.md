@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🔴 PROJECT DRAGON 403
 
@@ -264,4 +264,3 @@ No unauthorized access to private systems was performed. This evidence is provid
 🐾
 
 </div>
-]]>
