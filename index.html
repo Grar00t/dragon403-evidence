@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon403 Forensic OS — Case 6-3808000039722</title>
+    <style>
+        :root {
+            --bg-color: #0c0c0c;
+            --text-color: #00ff41;
+            --header-color: #1a1a1a;
+            --border-color: #333;
+            --accent-color: #ff3e3e;
+            --window-bg: rgba(12, 12, 12, 0.95);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100-vh;
+        }
+
+        #desktop {
+            flex-grow: 1;
+            position: relative;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0c0c0c 100%);
+            padding: 20px;
+        }
+
+        .window {
+            position: absolute;
+            background: var(--window-bg);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            max-width: 800px;
+            z-index: 10;
+        }
+
+        .window-header {
+            background: var(--header-color);
+            padding: 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: move;
+            font-size: 0.8em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .window-title {
+            color: #ccc;
+        }
+
+        .window-controls span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+
+        .close { background: #ff5f56; }
+        .min { background: #ffbd2e; }
+        .max { background: #27c93f; }
+
+        .window-content {
+            padding: 15px;
+            overflow-y: auto;
+            max-height: 500px;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        /* Specific Window Styles */
+        #log-window { top: 50px; left: 50px; width: 450px; }
+        #network-window { top: 100px; left: 550px; width: 500px; }
+        #contract-window { bottom: 80px; left: 50px; width: 450px; }
+        #status-window { bottom: 80px; right: 50px; width: 350px; }
+
+        .log-entry { margin-bottom: 5px; }
+        .timestamp { color: #888; font-size: 0.8em; margin-right: 10px; }
+        .crit { color: var(--accent-color); font-weight: bold; }
+        .info { color: #00ccff; }
+
+        .taskbar {
+            height: 40px;
+            background: var(--header-color);
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            justify-content: space-between;
+        }
+
+        .start-btn {
+            background: #333;
+            color: white;
+            padding: 5px 15px;
+            border: 1px solid #444;
+            font-size: 0.9em;
+            margin-right: 20px;
+        }
+
+        .stats-ticker {
+            font-size: 0.8em;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 5px; border-bottom: 1px solid #222; }
+        th { color: #888; font-size: 0.8em; }
+
+        pre { margin: 0; color: #aaa; font-size: 0.85em; }
+
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+
+        .highlight { background: rgba(0, 255, 65, 0.1); padding: 2px 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+<div id="desktop">
+    <!-- Log Window -->
+    <div class="window" id="log-window">
+        <div class="window-header">
+            <div class="window-title">investigation_pulse.log</div>
+            <div class="window-controls"><span class="min"></span><span class="max"></span><span class="close"></span></div>
+        </div>
+        <div class="window-content" id="log-content">
+            <div class="log-entry"><span class="timestamp">[2026-03-24 21:00]</span> SYSTEM: Initializing Dragon403 Forensic Engine...</div>
+            <div class="log-entry"><span class="timestamp">[2026-03-24 21:05]</span> <span class="info">INFO:</span> Scanning recruitment layers (Hawa/Yoho/Famy)...</div>
+            <div class="log-entry"><span class="timestamp">[2026-03-24 21:10]</span> <span class="crit">ALERT:</span> 33 TRON funnel addresses identified.</div>
+            <div class="log-entry"><span class="timestamp">[2026-03-24 21:15]</span> <span class="info">INFO:</span> Cross-referencing Ghost Admin 0xB843...</div>
+            <div class="log-entry"><span class="timestamp">[2026-03-24 21:20]</span> <span class="crit">ALERT:</span> Liquidity unlock confirmed for May 26 2026.</div>
+        </div>
+    </div>
+
+    <!-- Network Window -->
+    <div class="window" id="network-window">
+        <div class="window-header">
+            <div class="window-title">fraud_network_map.map</div>
+            <div class="window-controls"><span class="min"></span><span class="max"></span><span class="close"></span></div>
+        </div>
+        <div class="window-content">
+            <pre>
+┌───────────────────────────────────────────────────┐
+│              GHOST ADMIN (0xB843...)              │
+│            [Centralized Exit Control]             │
+└─────────┬───────────────────────┬─────────────────┘
+          ▼                       ▼
+┌───────────────────┐   ┌───────────────────────────┐
+│   HILO TOKEN V2   │   │     FALLA LIVE ADMIN      │
+│ (Proxy: 0x6c3f...)│   │ (Decompiled: 0x1475...)   │
+└─────────┬─────────┘   └─────────────┬─────────────┘
+          ▼                           ▼
+┌───────────────────────────────────────────────────┐
+│             RECRUITMENT LAYERS (SOCIAL)           │
+│      [ Hawa | Yoho | Famy | VoChat | Falla ]      │
+└─────────────────────────┬─────────────────────────┘
+                          ▼
+            [ 2,000+ VICTIMS | BILLIONS SAR ]
+            </pre>
+            <div style="margin-top: 10px; font-size: 0.8em; color: #888;">
+                Network mapped via Smali decompilation and WebRTC leak analysis.
+            </div>
+        </div>
+    </div>
+
+    <!-- Contract Window -->
+    <div class="window" id="contract-window">
+        <div class="window-header">
+            <div class="window-title">hilo_contract_audit.txt</div>
+            <div class="window-controls"><span class="min"></span><span class="max"></span><span class="close"></span></div>
+        </div>
+        <div class="window-content">
+            <table>
+                <tr><th>FUNCTION</th><th>STATUS</th><th>RISK</th></tr>
+                <tr><td>authorizeUpgrade()</td><td style="color:red">ARMED</td><td>Replace Logic</td></tr>
+                <tr><td>pause()</td><td style="color:red">ARMED</td><td>Honeypot Trigger</td></tr>
+                <tr><td>blacklist()</td><td style="color:red">ARMED</td><td>Asset Lockdown</td></tr>
+                <tr><td>mint()</td><td style="color:yellow">DORMANT</td><td>Inflation Trap</td></tr>
+            </table>
+            <p style="font-size: 0.8em; margin-top: 10px;">
+                <span class="highlight">GHOST_ADMIN: 0xB843F547a8a46a9483cf46c757c7eF4220115A83</span><br>
+                0 TX history. Primary upgrade controller.
+            </p>
+        </div>
+    </div>
+
+    <!-- Status Window -->
+    <div class="window" id="status-window">
+        <div class="window-header">
+            <div class="window-title">case_status.sys</div>
+            <div class="window-controls"><span class="min"></span><span class="max"></span><span class="close"></span></div>
+        </div>
+        <div class="window-content">
+            <div style="text-align: center; margin-bottom: 15px;">
+                <div style="font-size: 1.5em; color: var(--accent-color); font-weight: bold;">CASE ACTIVE</div>
+                <div style="font-size: 0.8em; color: #ccc;">Ref: 6-3808000039722</div>
+            </div>
+            <div style="font-size: 0.85em;">
+                [✓] FBI IC3 Filed<br>
+                [✓] FTC #199332032 Confirmed<br>
+                [✓] CISA ae92fcd1 Confirmed<br>
+                [✓] Action Fraud UK Confirmed<br>
+                [!] MEXC Compliance Pending
+            </div>
+            <div style="margin-top: 15px; border: 1px solid #444; height: 10px; border-radius: 5px;">
+                <div style="background: var(--text-color); width: 85%; height: 100%; border-radius: 5px;"></div>
+            </div>
+            <div style="text-align: right; font-size: 0.7em; margin-top: 5px;">Evidence Saturation: 85%</div>
+        </div>
+    </div>
+</div>
+
+<div class="taskbar">
+    <div style="display: flex; align-items: center;">
+        <div class="start-btn">DRAGON_403</div>
+        <div class="stats-ticker">
+            <span class="blink">●</span> SCAN_ACTIVE | SAR_LOSS: 1B+ | VICTIMS: 2000+ | LIQ_UNLOCK: 2026-05-26
+        </div>
+    </div>
+    <div style="font-size: 0.8em; color: #888;">
+        KHAWRIZM Forensic Labs | Riyadh, KSA
+    </div>
+</div>
+
+<script>
+    // Simple Log Animation
+    const logContent = document.getElementById('log-content');
+    const logs = [
+        "Verifying TRON funnel address: TCHFcsY7...",
+        "Tracing USDT flow through Hawa room proxy...",
+        "Identifying Smali class: com.hilo.fraud.logic...",
+        "Matching pattern: Naif bin Juhaidil (ID 1)...",
+        "Ecosystem Pulse: 100% Sovereign Integrity.",
+        "Generating evidence manifest for Interpol...",
+        "Monitoring Ghost Admin 0xB843... [STABLE]"
+    ];
+
+    let logIdx = 0;
+    setInterval(() => {
+        const div = document.createElement('div');
+        div.className = 'log-entry';
+        const now = new Date();
+        const ts = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0') + ':' + now.getSeconds().toString().padStart(2, '0');
+        div.innerHTML = <span class=\"timestamp\">[2026-03-24 \]</span> \;
+        logContent.appendChild(div);
+        logContent.scrollTop = logContent.scrollHeight;
+        logIdx = (logIdx + 1) % logs.length;
+    }, 4000);
+
+    // Make windows draggable (basic)
+    const windows = document.querySelectorAll('.window');
+    windows.forEach(win => {
+        const header = win.querySelector('.window-header');
+        header.onmousedown = (e) => {
+            let offsetXX = e.clientX - win.offsetLeft;
+            let offsetYY = e.clientY - win.offsetTop;
+            document.onmousemove = (e) => {
+                win.style.left = (e.clientX - offsetXX) + 'px';
+                win.style.top = (e.clientY - offsetYY) + 'px';
+            };
+            document.onmouseup = () => {
+                document.onmousemove = null;
+                document.onmouseup = null;
+            };
+        };
+    });
+</script>
+
+</body>
+</html>
