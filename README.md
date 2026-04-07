@@ -1,56 +1,67 @@
-# 🔴 PROJECT DRAGON 403
+# PROJECT DRAGON 403
 
 ### Forensic Evidence Repository — HILO/FALLA Fraud Network
 **Case Reference:** `6-3808000039722`
 
-[![Case Status](https://img.shields.io/badge/Case-ACTIVE-red)]() 
-[![Victims](https://img.shields.io/badge/Victims-2%2C000+-critical)]() 
-[![Losses](https://img.shields.io/badge/Losses-Millions%2FBillions%20SAR-red)]() 
+[![Case Status](https://img.shields.io/badge/Case-ACTIVE-red)]()
 [![Filed With](https://img.shields.io/badge/Filed-FBI%20%7C%20FTC%20%7C%20CISA%20%7C%20NCA%20%7C%20SAMA-blue)]()
 
-## ⚠️ EXECUTIVE SUMMARY
-This repository is the primary cryptographic and architectural archive for Project Dragon 403. Our forensic extraction (March 2026) confirms that this is not an isolated incident, but a monolithic multi-app ecosystem (70+ cloned apps) engineered to bypass Saudi/GCC financial gateways, groom minors, and extract capital through a Shadow Banking pipeline.
+## EXECUTIVE SUMMARY
+This repository is the primary cryptographic and architectural archive for Project Dragon 403. Forensic extraction (March 2026) recovered backend source code, configuration artifacts, and blockchain address references from the HILO/FALLA platform ecosystem.
 
 ---
 
-## 🔐 CHAIN OF CUSTODY & EVIDENCE INTEGRITY (HASH TABLE)
-To ensure absolute cryptographic integrity and prevent any claims of tampering, all primary artifacts in this repository are anchored by SHA-256 hashes. Any modification to these files will invalidate the hash.
+## CHAIN OF CUSTODY & EVIDENCE INTEGRITY (HASH TABLE)
+All primary artifacts in this repository are anchored by SHA-256 hashes. Any modification to these files will invalidate the corresponding hash.
 
 | Artifact File | Evidence Type | SHA-256 Checksum |
 |---------------|---------------|------------------|
-| `falla_admin.js` | Monolithic Backend Router | `71bf18bf6be88fc7afb4a0d5ae668148` |
-| `extracted_tron_addresses.json` | Shadow Banking Exit Nodes | `f6037e04a9501fe094e70e2b5c5c6459a1cded2faef9422b9f689e102347018f` |
+| `falla_admin.js` | Backend Router Source | `71bf18bf6be88fc7afb4a0d5ae668148d0f75f080ec9e6a6956776bc865ad88d` |
+| `falla_beautified.js` | Beautified Router Source | `22d73b1648119fd7c4dea92b9c99c127406eafce286e07f38b83d5cc237efab7` |
+| `extracted_tron_addresses.json` | Extracted TRON Addresses | `ea61b6fff8ef9a61b93047bbb83ce6417dc7ab4f1f23b9cd86bc9570a80486e5` |
+| `FORENSIC_CRYPTO_REPORT.json` | Crypto Report | `a4fb9d2d5ea8ec1fcc899f49a8d5cd9f5023154f113c0b53235b26bdb77a315f` |
+| `FULL_FORENSIC_REPORT.txt` | Full Forensic Report | `2e697479a4050dbe67f29d5bbad6ee9d163bb34f6c2170c82290acfd188a7071` |
+| `FINAL_SUBMISSION.md` | Final Submission | `114a9a46152cefef794f4dcfc7f59510c65c1a02fd8877f018642989d6f5dbc3` |
+| `FINAL_EXPOSURE_REPORT.txt` | Exposure Report | `a9ee8db17644572a988a38c990b6521f36705dedf0f638f086250e084b49053c` |
+| `dragon403_results.json` | Investigation Results | `f4ddcad665fc55afda79a56c7511982f5ea52cdb2c934326c09c737e6be05cbf` |
 
-**Verification Methodology for Regulators:**
-Investigators can independently verify these artifacts by downloading the files and running: `sha256sum <filename>` on Linux/macOS or `Get-FileHash <filename>` on Windows.
+**Verification:** Investigators can independently verify these artifacts by running: `sha256sum <filename>` on Linux/macOS or `Get-FileHash <filename>` on Windows.
 
 ---
 
-## 🚨 INDEPENDENT ARCHITECTURAL AUDIT (SEC-OPS)
-**Target Object:** `falla_admin.js` (Central Monolithic Router: `adm-api-33356`)
+## RAW EVIDENCE — Strings and Structures Found in Source Files
 
-An independent architectural security audit has confirmed catastrophic, deliberate structural flaws in the platform's backend:
+The following are literal strings, route definitions, and configuration values present in `falla_admin.js`:
 
-### 1. Broken Access Control & Child Endpoints (Critical)
-`/childAdmin` and `/childChat` are co-located on the exact same router as `agentCoinNotEnough` (a virtual currency liquidity flag) and `award`. There is **zero domain boundary** between child-interaction surfaces and financial transaction logic. 
-* **The Exploit:** Combined with the hardcoded `corsHeader: "Origin: *"`, any external origin can make credentialed cross-origin requests to child-facing endpoints. 
-* **Forensic Conclusion:** Architecturally, the platform cannot separate child interaction from financial incentive flows. This is the technical signature of a system where grooming/rewarding minors is a deliberate feature.
+- Route definitions `/childAdmin` and `/childChat` exist on the same Express router as `agentCoinNotEnough` and `award`.
+- The string `corsHeader: "Origin: *"` is hardcoded in the source.
+- UID query endpoints exist without rate-limiting middleware in the routing layer.
+- An 11-tier `SVIP` system is defined with tier metadata exposed in API responses.
+- Geo-filter strings `SA_SA` and `AR_GCC` are present in the codebase.
+
+---
+
+## ANALYSIS & INTERPRETATION
+
+> An architectural analysis of the routing definitions was conducted. Findings are reproducible by any qualified security engineer using the artifacts in this repository.
+
+See [ARCHITECTURAL_ANALYSIS.md](ARCHITECTURAL_ANALYSIS.md) for the full analysis. Key findings:
+
+### 1. Access Control Observations (Critical)
+The co-location of `/childAdmin`, `/childChat`, `agentCoinNotEnough`, and `award` on a single router means there is no domain boundary between child-interaction surfaces and financial transaction logic. Combined with `corsHeader: "Origin: *"`, any external origin could make cross-origin requests to these endpoints.
 
 ### 2. Insecure Direct Object Reference (High)
-UID queries are handled without rate-limiting, making sequential enumeration of user IDs trivial. 
-* **The Exploit:** Enables malicious actors to scrape a complete database of users (including minors).
-* **Aggravating Factor:** The 11-tier `SVIP` system exposes tier metadata, allowing the correlation of UID enumeration with spending levels to identify high-value targets.
+UID queries lack rate-limiting in the routing layer, making sequential enumeration of user IDs possible. The `SVIP` tier metadata could allow correlation of UIDs with spending levels.
 
-### 3. Saudi PDPL & Sovereignty Violation
-The hardcoded inclusion of `SA_SA` and `AR_GCC` geo-filters confirms deliberate targeting of Saudi and Gulf users.
-* **Compliance Failure:** A monolithic router with no domain separation violates Saudi Arabia’s Personal Data Protection Law (PDPL) and National Cybersecurity Authority (NCA) mandates structurally. It is unpatchable without a total redesign.
+### 3. Saudi PDPL & Sovereignty Concerns
+The presence of `SA_SA` and `AR_GCC` geo-filters indicates targeting of Saudi and Gulf users. A monolithic router with no domain separation raises structural compliance concerns under Saudi Arabia's Personal Data Protection Law (PDPL) and NCA mandates.
 
 ---
 
-## ⛓️ FINANCIAL LAYER — THE TRON FUNNEL
-The real internal movement of extracted capital happens on the TRON Blockchain. We have extracted **33 target addresses** hardcoded/utilized as intermediate nodes to launder SAR deposits (via Codashop/STC Pay/Mada) into USDT.
+## FINANCIAL LAYER — TRON ADDRESSES
 
-**Primary Extracted Exit Wallets (Sample of 7 active nodes):**
+Seven TRON addresses were extracted and are listed in `extracted_tron_addresses.json`:
+
 1. `TCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu`
 2. `Tf7rkg7L6TuTtyMGs5xe1dJEPsOyggnhLa`
 3. `TRyz6SjiPcHVNh8JLrf5vOVZKGSJb4mjTF`
@@ -59,24 +70,32 @@ The real internal movement of extracted capital happens on the TRON Blockchain. 
 6. `TvywOOaMlXDiRkNSiBJ8kYCV8WY5zmsin3`
 7. `TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW`
 
-*(The complete array of all 33 addresses is documented in `extracted_tron_addresses.json`)*
+**Note:** `extracted_tron_addresses.json` contains a field `total_found: 33` but only 7 addresses are listed in the file.
 
 ---
 
-## 📂 REPOSITORY ARCHITECTURE
+## REPOSITORY ARCHITECTURE
 - **/hilo_dissection/** — Decompiled app logic and API analysis.
 - **/root_files/** — Core evidence recovered from the investigation (`falla_admin.js`, leaked keys).
 - **/target_shakhl/** — Infrastructure fingerprints and fuzzing results.
-- **extracted_tron_addresses.json** — TRON funnel wallets.
+- **extracted_tron_addresses.json** — Extracted TRON addresses.
 
-## ⚖️ LEGAL & REGULATORY STATUS
-Formal cyber incident reports and forensic payloads are active and escalating with:
+## LEGAL & REGULATORY STATUS
+Formal cyber incident reports and forensic payloads are active with:
 - **US FTC** (#199332032)
 - **CISA** (ae92fcd1)
 - **Action Fraud UK** (RF26030165360C)
 - **Saudi NCA & SAMA** (Active Priority Escalation)
 
 ---
+
+## KNOWN LIMITATIONS
+
+- **Hash corrections applied:** The original README listed an MD5 hash (32 characters) labeled as SHA-256 for `falla_admin.js`. All hashes in this version were recomputed using `sha256sum`.
+- **Address count discrepancy:** `extracted_tron_addresses.json` claims `total_found: 33` but only contains 7 addresses.
+- **Analysis not independently verified:** The architectural analysis in this repository was conducted by the investigator. It has not been reviewed or confirmed by an independent third party.
+- **TRON address on-chain activity:** The 7 listed TRON addresses showed zero on-chain activity as of last check.
+
+---
 **Investigator:** Sulaiman Alshammari (Dragon403)
-**Lab:** KHAWRIZM Forensic Labs, Riyadh, KSA 🇸🇦
-**Sovereign Principle:** *The Algorithm Always Returns Home.*
+**Lab:** KHAWRIZM Forensic Labs, Riyadh, KSA

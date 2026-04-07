@@ -1,7 +1,9 @@
-# Independent Architectural Security Audit
+> This analysis was conducted by the investigator (Sulaiman Alshammari). Findings are reproducible using the artifacts in this repository. It has not been independently verified by a third party.
+
+# Architectural Analysis
 **Target Object:** `falla_admin.js` (Central Monolithic Router: `adm-api-33356`)
-**Hash (SHA-256):** `71bf18bf6be88fc7afb4a0d5ae668148`
-**Audit Context:** Sovereign Forensic Verification (Operation DRAGON403)
+**Hash (SHA-256):** `71bf18bf6be88fc7afb4a0d5ae668148d0f75f080ec9e6a6956776bc865ad88d`
+**Analysis Context:** Forensic Verification (Operation DRAGON403)
 
 ## 1. Broken Access Control & Child Endpoints (Critical)
 `/childAdmin` and `/childChat` are co-located on the same router as `agentCoinNotEnough` (a virtual currency liquidity flag) and `award`. There is **no domain boundary** between child-interaction surfaces and financial transaction logic. 
