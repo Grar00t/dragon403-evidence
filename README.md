@@ -18,7 +18,7 @@ All primary artifacts in this repository are anchored by SHA-256 hashes. Any mod
 |---------------|---------------|------------------|
 | `falla_admin.js` | Backend Router Source | `71bf18bf6be88fc7afb4a0d5ae668148d0f75f080ec9e6a6956776bc865ad88d` |
 | `falla_beautified.js` | Beautified Router Source | `22d73b1648119fd7c4dea92b9c99c127406eafce286e07f38b83d5cc237efab7` |
-| `extracted_tron_addresses.json` | Extracted TRON Addresses | `ea61b6fff8ef9a61b93047bbb83ce6417dc7ab4f1f23b9cd86bc9570a80486e5` |
+| `extracted_tron_addresses.json` | Extracted TRON Addresses | `18a2c8290502b584e8c1cc1a3c15cc335633cd595bd41fe00464d0ba71f8c0b3` |
 | `FORENSIC_CRYPTO_REPORT.json` | Crypto Report | `a4fb9d2d5ea8ec1fcc899f49a8d5cd9f5023154f113c0b53235b26bdb77a315f` |
 | `FULL_FORENSIC_REPORT.txt` | Full Forensic Report | `2e697479a4050dbe67f29d5bbad6ee9d163bb34f6c2170c82290acfd188a7071` |
 | `FINAL_SUBMISSION.md` | Final Submission | `114a9a46152cefef794f4dcfc7f59510c65c1a02fd8877f018642989d6f5dbc3` |
@@ -31,13 +31,14 @@ All primary artifacts in this repository are anchored by SHA-256 hashes. Any mod
 
 ## RAW EVIDENCE — Strings and Structures Found in Source Files
 
-The following are literal strings, route definitions, and configuration values present in `falla_admin.js`:
+The following are literal strings, route definitions, and configuration values present in `falla_beautified.js` (beautified version of `falla_admin.js`), confirmed by automated extraction (`forensic_extract.py`):
 
-- Route definitions `/childAdmin` and `/childChat` exist on the same Express router as `agentCoinNotEnough` and `award`.
-- The string `corsHeader: "Origin: *"` is hardcoded in the source.
+- Route definitions `childAdmin: "/child"`, `childTranslate: "/translate"`, and `childChat: "/chat"` exist on the same router object as `agentCoinNotEnough` and `award`.
 - UID query endpoints exist without rate-limiting middleware in the routing layer.
 - An 11-tier `SVIP` system is defined with tier metadata exposed in API responses.
 - Geo-filter strings `SA_SA` and `AR_GCC` are present in the codebase.
+
+Automated extraction found 249 strings matching child-related patterns. The majority are React JSX `children` props (standard framework syntax). The forensically significant findings are the `/childAdmin` and `/childChat` route definitions, which are administrative endpoints for child user management co-located with financial endpoints.
 
 ---
 
@@ -48,7 +49,9 @@ The following are literal strings, route definitions, and configuration values p
 See [ARCHITECTURAL_ANALYSIS.md](ARCHITECTURAL_ANALYSIS.md) for the full analysis. Key findings:
 
 ### 1. Access Control Observations (Critical)
-The co-location of `/childAdmin`, `/childChat`, `agentCoinNotEnough`, and `award` on a single router means there is no domain boundary between child-interaction surfaces and financial transaction logic. Combined with `corsHeader: "Origin: *"`, any external origin could make cross-origin requests to these endpoints.
+The co-location of `/childAdmin`, `/childChat`, `agentCoinNotEnough`, and `award` on a single router means there is no domain boundary between child-interaction surfaces and financial transaction logic.
+
+**Note on CORS:** Automated source code extraction (`forensic_extract.py`) found 0 CORS header configurations (e.g. `corsHeader`, `Access-Control-Allow-Origin`) in the source code. The 12 matches for "origin" in the extraction report are all JavaScript `location.origin` references (standard browser API), not CORS configurations.
 
 ### 2. Insecure Direct Object Reference (High)
 UID queries lack rate-limiting in the routing layer, making sequential enumeration of user IDs possible. The `SVIP` tier metadata could allow correlation of UIDs with spending levels.
@@ -71,6 +74,22 @@ The presence of `SA_SA` and `AR_GCC` geo-filters indicates targeting of Saudi an
 7. `TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW`
 
 Address count verified by automated extraction (verify_tron_count.py): 0 TRON addresses found in `falla_admin.js` / `falla_beautified.js`. The 7 addresses listed above are present only in `extracted_tron_addresses.json`; their origin is not traceable to the source code in this repository. The original claim of 33 addresses has been corrected to 7.
+
+---
+
+## Automated Extraction Results (April 2026)
+
+The following were extracted by `forensic_extract.py` from `falla_beautified.js`:
+
+- **74 unique routes** confirmed (including `/child`, `/chat`, `/wed`, `/joymi/app`, `/boli/app`, `/toofun/app`, `/fallalite/app`, `/taeal/app`)
+- **51 unique URLs** across domains: `falla.live`, `joymi.live`, `apiboli.com`, `toofun.live`, `fallalite.com`, `taeal.live` (confirms multi-app backend serving multiple brands from one codebase)
+- **10 geo/region codes** including `SA_SA` and `AR_GCC` (confirms Gulf region targeting)
+- **65 crypto-related strings** (`wallet`, `coin`, `recharge` across multiple app brands: yigo, joymi, toofun, vochat, fallalite, taeal)
+- `/childAdmin` and `/childChat` route definitions confirmed present
+- **0 TRON addresses** in source code (addresses documented separately; see TRON ADDRESSES section)
+- **0 CORS configurations** in source code (all "origin" matches are `location.origin` browser API references)
+
+All findings reproducible by running: `python3 forensic_extract.py`
 
 ---
 

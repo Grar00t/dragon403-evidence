@@ -12,7 +12,7 @@ FINAL_SUBMISSION.md                  114a9a46152cefef794f4dcfc7f59510c65c1a02fd8
 FORENSIC_CRYPTO_REPORT.json          a4fb9d2d5ea8ec1fcc899f49a8d5cd9f5023154f113c0b53235b26bdb77a315f
 FRAUD_FINANCIAL_REPORT.txt           a29d19e02ad6b30e6f98379f0e4bb7c6d2c8dcaa33b5be90df298b054bb9e828
 FULL_FORENSIC_REPORT.txt             2e697479a4050dbe67f29d5bbad6ee9d163bb34f6c2170c82290acfd188a7071
-README.md                            a9bbfdab2736831d91130a97fa4d7c0e709353e4b18aded0c382f89024ec4c17
+README.md                            6a62456f22b78ff092159b3c021318e6cf94e15c7fec2dd6c5be2eaa947f055d
 TRON_VERIFICATION.json               a51aad76ae95e78f4b9c8ae1aa040716d6439f3740ca0f64a91b5d6c84220c0b
 Targets_Summary.md                   09ad9425b35e115dcafe32671f05ff744da139e58b9f556a95bfc44eb7a87426
 all_clean_targets.txt                282b9f51373109de335640dae91625583f875c4020af2723e66c9fa263db9499
@@ -22,7 +22,7 @@ common.txt                           fc320bacd30d93f5080029912b93667cd739401f816
 contradiction_check.txt              bee240b55ae6737be2092849ecd262bc7af3ff863c9098520e4f60ec67a15c12
 decode_hex_test.py                   b336ad83b2f8a1618c38c9d1d1423f4bfe109066740f7180d9995dfa870c258b
 dragon403_results.json               f4ddcad665fc55afda79a56c7511982f5ea52cdb2c934326c09c737e6be05cbf
-extracted_tron_addresses.json        ea61b6fff8ef9a61b93047bbb83ce6417dc7ab4f1f23b9cd86bc9570a80486e5
+extracted_tron_addresses.json        18a2c8290502b584e8c1cc1a3c15cc335633cd595bd41fe00464d0ba71f8c0b3
 falla_admin.js                       71bf18bf6be88fc7afb4a0d5ae668148d0f75f080ec9e6a6956776bc865ad88d
 falla_beautified.js                  22d73b1648119fd7c4dea92b9c99c127406eafce286e07f38b83d5cc237efab7
 falla_subs.txt                       edb5789843751579e188e6fc70d8c129fee3050711fa6a377136600421b31188
