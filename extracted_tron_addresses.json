@@ -10,5 +10,6 @@
                                  "TvywOOaMlXDiRkNSiBJ8kYCV8WY5zmsin3",
                                  "TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW"
                              ],
-    "total_found":  33
+    "total_found":  7,
+    "note": "Originally claimed 33. Automated extraction (verify_tron_count.py) found 0 TRON addresses in falla_admin.js/falla_beautified.js. The 7 addresses listed were not found in the source code of this repository. total_found corrected to match actual listed count."
 }
