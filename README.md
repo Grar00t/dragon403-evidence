@@ -60,7 +60,7 @@ The presence of `SA_SA` and `AR_GCC` geo-filters indicates targeting of Saudi an
 
 ## FINANCIAL LAYER — TRON ADDRESSES
 
-Seven TRON addresses were extracted and are listed in `extracted_tron_addresses.json`:
+7 TRON addresses are listed in `extracted_tron_addresses.json`:
 
 1. `TCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu`
 2. `Tf7rkg7L6TuTtyMGs5xe1dJEPsOyggnhLa`
@@ -70,7 +70,7 @@ Seven TRON addresses were extracted and are listed in `extracted_tron_addresses.
 6. `TvywOOaMlXDiRkNSiBJ8kYCV8WY5zmsin3`
 7. `TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW`
 
-**Note:** `extracted_tron_addresses.json` contains a field `total_found: 33` but only 7 addresses are listed in the file.
+Address count verified by automated extraction (verify_tron_count.py): 0 TRON addresses found in `falla_admin.js` / `falla_beautified.js`. The 7 addresses listed above are present only in `extracted_tron_addresses.json`; their origin is not traceable to the source code in this repository. The original claim of 33 addresses has been corrected to 7.
 
 ---
 
@@ -92,7 +92,7 @@ Formal cyber incident reports and forensic payloads are active with:
 ## KNOWN LIMITATIONS
 
 - **Hash corrections applied:** The original README listed an MD5 hash (32 characters) labeled as SHA-256 for `falla_admin.js`. All hashes in this version were recomputed using `sha256sum`.
-- **Address count discrepancy:** `extracted_tron_addresses.json` claims `total_found: 33` but only contains 7 addresses.
+- **Address count corrected:** `extracted_tron_addresses.json` originally claimed `total_found: 33` but listed only 7 addresses. Automated extraction found 0 TRON addresses in the source code. `total_found` corrected to 7.
 - **Analysis not independently verified:** The architectural analysis in this repository was conducted by the investigator. It has not been reviewed or confirmed by an independent third party.
 - **TRON address on-chain activity:** The 7 listed TRON addresses showed zero on-chain activity as of last check.
 
