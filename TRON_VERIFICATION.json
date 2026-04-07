@@ -1,0 +1,20 @@
+{
+  "json_file": "extracted_tron_addresses.json",
+  "source_file": "falla_beautified.js",
+  "json_address_count": 7,
+  "json_total_found_field": 33,
+  "source_address_count": 0,
+  "match": false,
+  "addresses_in_both": [],
+  "in_json_not_in_source": [
+    "TCHFcsY7VqTq35c9zZPzKo7JtfNYVAryfu",
+    "TNVkg3pxm3pkshfolcmx97La1qqrd9dnOW",
+    "TRyz6SjiPcHVNh8JLrf5vOVZKGSJb4mjTF",
+    "Tf7rkg7L6TuTtyMGs5xe1dJEPsOyggnhLa",
+    "TuDAOIbYAj7JoD4vutLdgYBxDfAEPZNAPF",
+    "TuSCebQRIvNR3qzAReKfJ7LtSjoUY8gqeJ",
+    "TvywOOaMlXDiRkNSiBJ8kYCV8WY5zmsin3"
+  ],
+  "in_source_not_in_json": [],
+  "total_combined_unique": 7
+}

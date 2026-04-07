@@ -1,0 +1,1617 @@
+{
+  "source_file": "falla_beautified.js",
+  "routes": {
+    "count": 74,
+    "values": [
+      "//static.fallaweb.com/",
+      "//static.fallaweb.com/lang_conf/",
+      "//web.boli.live/lang_conf/",
+      "//web.fallalite.com/lang_conf/",
+      "//web.joymiweb.com/lang_conf/",
+      "//web.taeal.live/lang_conf/",
+      "//web.toofun.live/lang_conf/",
+      "/1-prod.json",
+      "/490-prod.json",
+      "/503-prod.json",
+      "/510-prod.json",
+      "/612-prod.json",
+      "/705-prod.json",
+      "/api/admin/common/select",
+      "/api/admin/common/select/v2",
+      "/api/admin/common/user/reward/record/item/list",
+      "/api/admin/getGroupListBySgids",
+      "/api/admin/getGroupListBySgidsV2",
+      "/api/admin/getUserIdentityNobilityByDuid",
+      "/api/admin/getUserListByUids",
+      "/api/admin/getUserListByUidsV2",
+      "/api/admin/op/general/award",
+      "/api/admin/prize/add",
+      "/api/admin/prize/audit",
+      "/api/admin/prize/update",
+      "/api/admin/translationtask/check",
+      "/api/admin/translationtask/clone",
+      "/api/admin/translationtask/lockstatus/set",
+      "/api/admin/translationtask/pub",
+      "/api/admin/translationtask/saveTranslationtask",
+      "/api/config/2",
+      "/api/web/admin/UploadFile",
+      "/api/web/admin/member/login",
+      "/api/web/admin/member/logout",
+      "/api/web/admin/member/password/reset",
+      "/api/web/admin/permission/v2/display/list",
+      "/api/web/admin/sent/verify/code",
+      "/api/web/country/list",
+      "/boli/app",
+      "/business",
+      "/chat",
+      "/child",
+      "/child/app/props/prize-setting?prizeId=",
+      "/child/test-tool/mac-risk?mac=",
+      "/dashboard",
+      "/fallalite/app",
+      "/favicon.ico",
+      "/h5_",
+      "/index.html?t=",
+      "/index.tsx",
+      "/joymi/app",
+      "/login",
+      "/login?redirect_url=",
+      "/main/index.html",
+      "/proxy-api",
+      "/proxy-apihk",
+      "/proxy-fallalite",
+      "/proxy-fallalite-test",
+      "/proxy-folo",
+      "/proxy-folo-test",
+      "/proxy-joymi",
+      "/proxy-joymi-test",
+      "/proxy-mock-api",
+      "/proxy-silkroad",
+      "/proxy-silkroadtest",
+      "/proxy-taeal",
+      "/proxy-taeal-test",
+      "/taeal/app",
+      "/toofun/app",
+      "/translate",
+      "/translate/task/fields?id=",
+      "/translate/task/list?id=",
+      "/wed",
+      "/wed/dashboard/gift/list?giftid="
+    ]
+  },
+  "urls": {
+    "count": 51,
+    "values": [
+      "http://localhost:",
+      "http://www.w3.org/2000/svg",
+      "https://activity-test.falla.live",
+      "https://activity.falla.live",
+      "https://adm-5688.apiboli.com",
+      "https://adm-api-33356.apifalla.com/",
+      "https://adm-api-33356.fallalite.com",
+      "https://adm-api-33356.joymi.live",
+      "https://adm-api-33356.taeal.live",
+      "https://adm-api-33356.toofun.live",
+      "https://apihk.falla.live",
+      "https://ice.work/docs/guide/advanced/icestark/\\n",
+      "https://img.alicdn.com/tfs/TB1txw7bNrI8KJjy0FpXXb5hVXa-260-260.png",
+      "https://ssr-test.falla.live",
+      "https://ssr.falla.live",
+      "https://static.fallaweb.com/favicon.png",
+      "https://testapi.apiboli.com",
+      "https://testapi.apifolo.com",
+      "https://testapi.fallalite.com",
+      "https://testapi.joymi.live",
+      "https://testapi.taeal.live",
+      "https://web-oss.boli.live",
+      "https://web-oss.fallalite.com",
+      "https://web-oss.joymiweb.com",
+      "https://web-oss.taeal.live",
+      "https://web-oss.toofun.live",
+      "https://web-test.boli.live",
+      "https://web-test.falla.live",
+      "https://web-test.fallalite.com",
+      "https://web-test.joymiweb.com",
+      "https://web-test.taeal.live",
+      "https://web-test.toofun.live",
+      "https://web.boli.live",
+      "https://web.boli.live/favicon.png",
+      "https://web.falla.live/api/config/",
+      "https://web.falla.live/api/config/test/",
+      "https://web.fallalite.com",
+      "https://web.fallalite.com/favicon.png",
+      "https://web.fallaweb.com",
+      "https://web.joymiweb.com",
+      "https://web.joymiweb.com/favicon.png",
+      "https://web.taeal.live",
+      "https://web.taeal.live/favicon.png",
+      "https://web.toofun.live",
+      "https://web.toofun.live/favicon.png",
+      "https://www.falla.live",
+      "https://www.fallalite.com",
+      "https://www.joymi.live",
+      "https://www.taeal.live",
+      "https://www.toofun.live",
+      "https://www.yigolive.com"
+    ]
+  },
+  "domains": {
+    "count": 51,
+    "values": [
+      "activity-test.falla.live\",",
+      "activity.falla.live\"",
+      "activity.falla.live\",",
+      "adm-5688.apiboli.com\",",
+      "adm-api-33356.apifalla.com",
+      "adm-api-33356.fallalite.com\",",
+      "adm-api-33356.joymi.live\",",
+      "adm-api-33356.taeal.live\"",
+      "adm-api-33356.toofun.live\",",
+      "apihk.falla.live\",",
+      "ice.work",
+      "img.alicdn.com",
+      "localhost",
+      "ssr-test.falla.live\",",
+      "ssr.falla.live\"",
+      "static.fallaweb.com",
+      "testapi.apiboli.com\",",
+      "testapi.apifolo.com\",",
+      "testapi.fallalite.com\",",
+      "testapi.joymi.live\",",
+      "testapi.taeal.live\",",
+      "web-oss.boli.live\"",
+      "web-oss.fallalite.com\"",
+      "web-oss.joymiweb.com\"",
+      "web-oss.taeal.live\"",
+      "web-oss.toofun.live\"",
+      "web-test.boli.live\",",
+      "web-test.falla.live\",",
+      "web-test.fallalite.com\",",
+      "web-test.joymiweb.com\",",
+      "web-test.taeal.live\",",
+      "web-test.toofun.live\",",
+      "web.boli.live",
+      "web.boli.live\",",
+      "web.falla.live",
+      "web.fallalite.com",
+      "web.fallalite.com\",",
+      "web.fallaweb.com\",",
+      "web.joymiweb.com",
+      "web.joymiweb.com\",",
+      "web.taeal.live",
+      "web.taeal.live\",",
+      "web.toofun.live",
+      "web.toofun.live\",",
+      "www.falla.live\"),",
+      "www.fallalite.com\"),",
+      "www.joymi.live\"),",
+      "www.taeal.live\"),",
+      "www.toofun.live\"),",
+      "www.w3.org",
+      "www.yigolive.com\"),"
+    ]
+  },
+  "ip_addresses": {
+    "count": 0,
+    "values": []
+  },
+  "tron_addresses": {
+    "count": 0,
+    "values": []
+  },
+  "geo_region_codes": {
+    "count": 10,
+    "values": [
+      "AR_GCC",
+      "AR_NGCC",
+      "EN_BG",
+      "EN_IN",
+      "EN_PE",
+      "EN_PK",
+      "ES_ES",
+      "SA_SA",
+      "TR_CA",
+      "TR_TR"
+    ]
+  },
+  "region_values": {
+    "count": 3,
+    "values": [
+      "AR",
+      "EN",
+      "TR"
+    ]
+  },
+  "cors_configurations": {
+    "count": 12,
+    "values": [
+      "767b\\u5f55\"), Hn.removeLoginUser(), (r = \"\".concat(location.origin, \"/login\")) === location.href || location.href.includes(\"/l",
+      "i = Qe(\"\".concat(location.origin), \"/wed/dashboard/gift/list?giftid=\".concat(null == o ? voi",
+      "location.href.includes(\"\".concat(location.origin, \"/dashboard\")) && Jt.hk.replace(\"/wed\".concat(location.pat",
+      "return \"\".concat(window.location.origin).concat(window.location.pathname ? window.location.pathname",
+      "return c.__refresh__ = r, \"\".concat(n.origin).concat(n.pathname, \"?\").concat(queryString.stringify(c)).c",
+      "return l.next = 17, Qd(a.originFileObj);",
+      "return l.next = 20, Xd(a.originFileObj);",
+      "return r = window.location, n = r.href, a = r.origin, o = r.pathname, i = r.search, u = n.replace(a, \"\"), s = v.",
+      "u = Qe(\"\".concat(location.origin), \"/child/app/props/prize-setting?prizeId=\".concat(null ==",
+      "var n = Qe(\"\".concat(location.origin), \"/translate/task/fields?id=\".concat(t));",
+      "var r = Qe(\"\".concat(location.origin), \"/translate/task/list?id=\".concat(t));",
+      "window.location.href = t ? decodeURIComponent(t) : location.origin)"
+    ]
+  },
+  "child_references": {
+    "count": 249,
+    "values": [
+      {
+        "match": "Child",
+        "context": "document.body.removeChild(n)                 ",
+        "position": 7697
+      },
+      {
+        "match": "Child",
+        "context": "document.body.appendChild(n)                 ",
+        "position": 7796
+      },
+      {
+        "match": "Child",
+        "context": "document.body.appendChild(r), r.select(), r.s",
+        "position": 8547
+      },
+      {
+        "match": "Child",
+        "context": "document.body.removeChild(r)                 ",
+        "position": 8659
+      },
+      {
+        "match": "child",
+        "context": "                    childAdmin: \"/child\",    ",
+        "position": 12098
+      },
+      {
+        "match": "child",
+        "context": "      childAdmin: \"/child\",                  ",
+        "position": 12112
+      },
+      {
+        "match": "child",
+        "context": "                    childTranslate: \"/transla",
+        "position": 12144
+      },
+      {
+        "match": "child",
+        "context": "                    childChat: \"/chat\",      ",
+        "position": 12198
+      },
+      {
+        "match": "child",
+        "context": ")), null !== (n = t.children) && void 0 !== n",
+        "position": 145897
+      },
+      {
+        "match": "child",
+        "context": "bject.assign(r, e(t.children)))              ",
+        "position": 145964
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(p.",
+        "position": 244118
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u7ffb\\u8bd1\\u",
+        "position": 244364
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u5b9a\\u4f4d\\u",
+        "position": 244722
+      },
+      {
+        "match": "kId",
+        "context": "= n ? void 0 : n.taskId) || (null == t || n",
+        "position": 245282
+      },
+      {
+        "match": "kId",
+        "context": "= o ? void 0 : o.taskId), t.description = h",
+        "position": 245401
+      },
+      {
+        "match": "kId",
+        "context": "= r ? void 0 : r.taskId) === Number(i)     ",
+        "position": 246196
+      },
+      {
+        "match": "kId",
+        "context": "= t ? void 0 : t.taskId) === Number(i)     ",
+        "position": 246923
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: i,                ",
+        "position": 247697
+      },
+      {
+        "match": "kId",
+        "context": "= t ? void 0 : t.taskId) || (null == a || n",
+        "position": 259909
+      },
+      {
+        "match": "kId",
+        "context": "= i ? void 0 : i.taskId), l.next = 3, r.pos",
+        "position": 260028
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: c,                ",
+        "position": 260325
+      },
+      {
+        "match": "child",
+        "context": "                    children: [t && (0, Xi.js",
+        "position": 283549
+      },
+      {
+        "match": "child",
+        "context": "                    children: t              ",
+        "position": 283626
+      },
+      {
+        "match": "child",
+        "context": "                    children: Qi().converter(",
+        "position": 283793
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(\"d",
+        "position": 292411
+      },
+      {
+        "match": "child",
+        "context": "                    children: v ? v(e, K) : v",
+        "position": 292483
+      },
+      {
+        "match": "child",
+        "context": "                    children: f ? function() ",
+        "position": 292935
+      },
+      {
+        "match": "child",
+        "context": "                    children: function t() { ",
+        "position": 293182
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(d.",
+        "position": 293341
+      },
+      {
+        "match": "child",
+        "context": "                    children: [g && g(e, K), ",
+        "position": 293499
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(d.",
+        "position": 293613
+      },
+      {
+        "match": "child",
+        "context": "                    children: T(y || (M ? \"\\u",
+        "position": 294108
+      },
+      {
+        "match": "child",
+        "context": "                    children: T(b || \"\\u53d6\\",
+        "position": 294794
+      },
+      {
+        "match": "kId",
+        "context": "= r ? void 0 : r.taskId, t.value)          ",
+        "position": 307981
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(p.Z",
+        "position": 319360
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(cs.",
+        "position": 427443
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(Rs",
+        "position": 438769
+      },
+      {
+        "match": "child",
+        "context": "                    children: r(\"\\u67e5\\u8be2",
+        "position": 439718
+      },
+      {
+        "match": "child",
+        "context": "                    children: r(\"\\u91cd\\u7f6e",
+        "position": 439857
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsxs)(D",
+        "position": 440363
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(Ds",
+        "position": 440878
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(As,",
+        "position": 441206
+      },
+      {
+        "match": "child",
+        "context": "                    children: Go(c || {}) || ",
+        "position": 441959
+      },
+      {
+        "match": "child",
+        "context": "                    children: (null == c ? vo",
+        "position": 442147
+      },
+      {
+        "match": "child",
+        "context": "                    children: Tf((null == c ?",
+        "position": 442357
+      },
+      {
+        "match": "child",
+        "context": "                    children: eo(null == c ? ",
+        "position": 443500
+      },
+      {
+        "match": "child",
+        "context": "                    children: Vo({           ",
+        "position": 444457
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\" \", (null == ",
+        "position": 447094
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\" \", null != c",
+        "position": 447775
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(Ds",
+        "position": 450186
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.nickname || \"",
+        "position": 451105
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(it.",
+        "position": 451304
+      },
+      {
+        "match": "child",
+        "context": "                    children: i(l.label)     ",
+        "position": 451442
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.uid || \"-\"   ",
+        "position": 451668
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.suid || \"-\"  ",
+        "position": 451862
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.svip ? \"SVIP\"",
+        "position": 452061
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"di",
+        "position": 452243
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"sp",
+        "position": 452364
+      },
+      {
+        "match": "child",
+        "context": "                    children: Go(r)          ",
+        "position": 452800
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"-\"            ",
+        "position": 452966
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(us.",
+        "position": 458177
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(of",
+        "position": 458669
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"Svga\\u4fe1\\u6",
+        "position": 458805
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u5185\\u5b58\\",
+        "position": 459067
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"pr",
+        "position": 459466
+      },
+      {
+        "match": "child",
+        "context": "                    children: JSON.stringify(",
+        "position": 459537
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(ot.",
+        "position": 460248
+      },
+      {
+        "match": "child",
+        "context": "                    children: p.map((function",
+        "position": 460389
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(\"a",
+        "position": 460969
+      },
+      {
+        "match": "child",
+        "context": "                    children: [e.name, \" --- ",
+        "position": 461055
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u8d44\\u6e90\\",
+        "position": 462002
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u70b9\\u51fb\\u",
+        "position": 462292
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.map((function",
+        "position": 463570
+      },
+      {
+        "match": "child",
+        "context": "                    children: n(\"\\u89c6\\u9891",
+        "position": 464207
+      },
+      {
+        "match": "child",
+        "context": "                    children: n(\"\\u9884\\u89c8",
+        "position": 464692
+      },
+      {
+        "match": "child",
+        "context": "                    children: t || \"-\"       ",
+        "position": 466022
+      },
+      {
+        "match": "child",
+        "context": "                    children: If(t, r)       ",
+        "position": 466962
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"co",
+        "position": 467726
+      },
+      {
+        "match": "child",
+        "context": "                    children: l.label || t ||",
+        "position": 470105
+      },
+      {
+        "match": "child",
+        "context": "                    children: u.map((function",
+        "position": 470371
+      },
+      {
+        "match": "child",
+        "context": "                    children: t.label || e ||",
+        "position": 470934
+      },
+      {
+        "match": "child",
+        "context": "                    children: l.map((function",
+        "position": 471748
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"a\"",
+        "position": 474594
+      },
+      {
+        "match": "child",
+        "context": "            href: \"/child/test-tool/mac-risk?",
+        "position": 474671
+      },
+      {
+        "match": "child",
+        "context": "location.origin), \"/child/app/props/prize-set",
+        "position": 484883
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsxs)(o",
+        "position": 485056
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u9884\\u89c8\\",
+        "position": 485120
+      },
+      {
+        "match": "child",
+        "context": "                    children: [!!a.gold && (0",
+        "position": 486035
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u5b9e\\u9645\\",
+        "position": 486122
+      },
+      {
+        "match": "child",
+        "context": "                    children: a.gold         ",
+        "position": 486283
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u5c55\\u793a\\",
+        "position": 486453
+      },
+      {
+        "match": "child",
+        "context": "                    children: a.worth        ",
+        "position": 486613
+      },
+      {
+        "match": "child",
+        "context": "                    children: [Tf(a.itemType,",
+        "position": 486793
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u6570\\u91cf\\",
+        "position": 486977
+      },
+      {
+        "match": "child",
+        "context": "                    children: a.itemCount    ",
+        "position": 487125
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u5929\\u6570\\",
+        "position": 487271
+      },
+      {
+        "match": "child",
+        "context": "                    children: a.itemDays     ",
+        "position": 487427
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"itemDays\" ===",
+        "position": 487633
+      },
+      {
+        "match": "child",
+        "context": "                    children: a[l]           ",
+        "position": 487821
+      },
+      {
+        "match": "child",
+        "context": "                    children: t(\"\\u9884\\u89c8",
+        "position": 504663
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(\"d",
+        "position": 506389
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(bd.",
+        "position": 506637
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"~\"            ",
+        "position": 507135
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(Od",
+        "position": 514870
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Md.",
+        "position": 531361
+      },
+      {
+        "match": "child",
+        "context": "                    children1: []            ",
+        "position": 539222
+      },
+      {
+        "match": "child",
+        "context": "              if (t.children1) {             ",
+        "position": 540956
+      },
+      {
+        "match": "child",
+        "context": "       var n = ap(t.children1),              ",
+        "position": 541018
+      },
+      {
+        "match": "child",
+        "context": "    return !(i && i.children1 && i.children1.",
+        "position": 542075
+      },
+      {
+        "match": "child",
+        "context": "&& i.children1 && i.children1.length >= a)   ",
+        "position": 542090
+      },
+      {
+        "match": "child",
+        "context": "                    children: [c && (0, Xi.js",
+        "position": 542292
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Wd.",
+        "position": 542712
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(d.F",
+        "position": 564668
+      },
+      {
+        "match": "child",
+        "context": "                    children: [b ? (0, Xi.jsx",
+        "position": 565491
+      },
+      {
+        "match": "child",
+        "context": "                    children: n(m || \"\\u67e5\\",
+        "position": 566742
+      },
+      {
+        "match": "child",
+        "context": "                    children: n(v || \"\\u91cd\\",
+        "position": 566902
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(zp.",
+        "position": 568759
+      },
+      {
+        "match": "child",
+        "context": "                    children: n              ",
+        "position": 572060
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(ot",
+        "position": 572344
+      },
+      {
+        "match": "child",
+        "context": "                    children: [Array.isArray(",
+        "position": 572615
+      },
+      {
+        "match": "child",
+        "context": "                    children: e              ",
+        "position": 572790
+      },
+      {
+        "match": "child",
+        "context": "                    children: [N(g), (0, Xi.j",
+        "position": 580379
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Jp.",
+        "position": 580742
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Ds.",
+        "position": 581263
+      },
+      {
+        "match": "child",
+        "context": "                    children: null === (a = t",
+        "position": 581466
+      },
+      {
+        "match": "child",
+        "context": "                    children: e.render ? e.re",
+        "position": 582180
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(fm,",
+        "position": 596648
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.itemCount ? \"",
+        "position": 617298
+      },
+      {
+        "match": "child",
+        "context": "                    children: r.itemDays ? \"\"",
+        "position": 617505
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Im,",
+        "position": 619194
+      },
+      {
+        "match": "kId",
+        "context": ".filedKey, n = t.taskId, a = t.type, o = t.",
+        "position": 637077
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 37                ",
+        "position": 637737
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: n                 ",
+        "position": 638076
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 72,               ",
+        "position": 643999
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 351,              ",
+        "position": 645817
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 370,              ",
+        "position": 646431
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 337,              ",
+        "position": 647585
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 491,              ",
+        "position": 648223
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: 517,              ",
+        "position": 648829
+      },
+      {
+        "match": "kId",
+        "context": "                 taskId: null === (r = oc[i",
+        "position": 649510
+      },
+      {
+        "match": "kId",
+        "context": "0 : r.translationTaskId,                   ",
+        "position": 649594
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u5f53\\u524d\\",
+        "position": 704278
+      },
+      {
+        "match": "child",
+        "context": "                    children: u.label        ",
+        "position": 704559
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsxs)(\"",
+        "position": 725207
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(\"p",
+        "position": 725585
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"Oops! Somethin",
+        "position": 727440
+      },
+      {
+        "match": "child",
+        "context": "              r = t.children,                ",
+        "position": 732403
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(n, ",
+        "position": 739499
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(of.",
+        "position": 742645
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(\"i",
+        "position": 742845
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(\"h",
+        "position": 743303
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u62b1\\u6b49\\u",
+        "position": 743445
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u60a8\\u8bbf\\",
+        "position": 743750
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u94fe\\u63a5\\u",
+        "position": 744042
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\u60a8\\u8981\\",
+        "position": 744309
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"\\u9996\\u9875\" ",
+        "position": 744536
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(\"h",
+        "position": 747274
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"Welcome to \",",
+        "position": 747341
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(\"s",
+        "position": 765355
+      },
+      {
+        "match": "child",
+        "context": "                    children: (null == e ? vo",
+        "position": 765657
+      },
+      {
+        "match": "child",
+        "context": "                    children: j.items.map((fu",
+        "position": 766243
+      },
+      {
+        "match": "child",
+        "context": "                    children: e.label        ",
+        "position": 766469
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"i\"",
+        "position": 767473
+      },
+      {
+        "match": "child",
+        "context": "                    children: i || (0, Xi.jsx",
+        "position": 767695
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(sg",
+        "position": 777001
+      },
+      {
+        "match": "child",
+        "context": "                    children: [0 === d && (0,",
+        "position": 777866
+      },
+      {
+        "match": "child",
+        "context": "                    children: b(\"\\u53d1\\u9001",
+        "position": 779629
+      },
+      {
+        "match": "child",
+        "context": "                    children: Ge(b(\"\\u5269\\u4",
+        "position": 779770
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(f,",
+        "position": 786591
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(d.S",
+        "position": 786897
+      },
+      {
+        "match": "child",
+        "context": "                    children: l(\"\\u767b\\u5f55",
+        "position": 787065
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(Yg",
+        "position": 793596
+      },
+      {
+        "match": "child",
+        "context": "                    children: l(\"\\u91cd\\u7f6e",
+        "position": 794068
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(cg,",
+        "position": 804378
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Cs.",
+        "position": 805448
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"im",
+        "position": 805642
+      },
+      {
+        "match": "child",
+        "context": "             yw = [\"children\", \"component\", \"",
+        "position": 806878
+      },
+      {
+        "match": "child",
+        "context": "     bw = [\"type\", \"children\"],              ",
+        "position": 806967
+      },
+      {
+        "match": "child",
+        "context": "ww = [\"component\", \"children\"];              ",
+        "position": 807098
+      },
+      {
+        "match": "child",
+        "context": "          var r = e.children,                ",
+        "position": 811051
+      },
+      {
+        "match": "child",
+        "context": " l, e, t)), r && (u.children = Cw(r, t)), u  ",
+        "position": 811465
+      },
+      {
+        "match": "child",
+        "context": "              r = e.children,                ",
+        "position": 811631
+      },
+      {
+        "match": "child",
+        "context": "                    children: a              ",
+        "position": 812101
+      },
+      {
+        "match": "child",
+        "context": "                    children: t.map((function",
+        "position": 812440
+      },
+      {
+        "match": "child",
+        "context": "              if (e.children) {              ",
+        "position": 812543
+      },
+      {
+        "match": "child",
+        "context": "              o = e.children,                ",
+        "position": 812650
+      },
+      {
+        "match": "child",
+        "context": "                    children: l              ",
+        "position": 813098
+      },
+      {
+        "match": "child",
+        "context": "                    children: \"loading\"      ",
+        "position": 814290
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(d, ",
+        "position": 814394
+      },
+      {
+        "match": "child",
+        "context": "              if (e.children) r.children = Kw",
+        "position": 817430
+      },
+      {
+        "match": "child",
+        "context": "  if (e.children) r.children = Kw(e.children,",
+        "position": 817442
+      },
+      {
+        "match": "child",
+        "context": ") r.children = Kw(e.children, r.path || e.pat",
+        "position": 817458
+      },
+      {
+        "match": "child",
+        "context": "                    children: r ? (0, Xi.jsx)",
+        "position": 822021
+      },
+      {
+        "match": "child",
+        "context": "\"/\" === e.path && e.children ? t = [].concat(",
+        "position": 823973
+      },
+      {
+        "match": "child",
+        "context": ".concat(Vw(t), Vw(e.children)) : t.push(e)   ",
+        "position": 824010
+      },
+      {
+        "match": "child",
+        "context": "    if (A && c(A), \"child\" === g) {          ",
+        "position": 830165
+      },
+      {
+        "match": "child",
+        "context": "                    children: e.children     ",
+        "position": 836112
+      },
+      {
+        "match": "child",
+        "context": "        children: e.children                 ",
+        "position": 836124
+      },
+      {
+        "match": "child",
+        "context": "                    children: j && (0, Xi.jsx",
+        "position": 839056
+      },
+      {
+        "match": "child",
+        "context": "                    children: [j.map((functio",
+        "position": 839357
+      },
+      {
+        "match": "child",
+        "context": "in = \"wed-admin\", e.childAdmin = \"falla-admin",
+        "position": 842410
+      },
+      {
+        "match": "child",
+        "context": "dmin = \"falla-admin/child-admin\", e.childChat",
+        "position": 842436
+      },
+      {
+        "match": "child",
+        "context": "min/child-admin\", e.childChat = \"admin/child-",
+        "position": 842452
+      },
+      {
+        "match": "child",
+        "context": ".childChat = \"admin/child-chat\", e.childTrans",
+        "position": 842471
+      },
+      {
+        "match": "child",
+        "context": "dmin/child-chat\", e.childTranslate = \"falla-a",
+        "position": 842486
+      },
+      {
+        "match": "child",
+        "context": "late = \"falla-admin/child-translate\", e.appAd",
+        "position": 842516
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(\"if",
+        "position": 852170
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsxs)(q",
+        "position": 868500
+      },
+      {
+        "match": "child",
+        "context": "                    children: [\"\\xa0\\xa0\\xa0\\",
+        "position": 868569
+      },
+      {
+        "match": "child",
+        "context": "                    children: (null == u ? vo",
+        "position": 868739
+      },
+      {
+        "match": "child",
+        "context": "                    children: [a(\"\\u77ed\\u4fe",
+        "position": 868918
+      },
+      {
+        "match": "child",
+        "context": "                    children: a(p ? \"\\u6253\\u",
+        "position": 869092
+      },
+      {
+        "match": "child",
+        "context": "                    children: [a(\"\\u540e\\u7ba",
+        "position": 869281
+      },
+      {
+        "match": "child",
+        "context": "                    children: Ut(Hr[b].label,",
+        "position": 869441
+      },
+      {
+        "match": "child",
+        "context": "                    children: a(\"\\u6e05\\u7a7a",
+        "position": 869602
+      },
+      {
+        "match": "child",
+        "context": "                    children: [a(\"\\u9884\\u89c",
+        "position": 869770
+      },
+      {
+        "match": "child",
+        "context": "                    children: a(T || A)      ",
+        "position": 869976
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(Qj",
+        "position": 870168
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(\"s",
+        "position": 870420
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)($j",
+        "position": 870578
+      },
+      {
+        "match": "child",
+        "context": "                    children: u.nickname     ",
+        "position": 871192
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(AO",
+        "position": 876310
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(sg.",
+        "position": 876799
+      },
+      {
+        "match": "child",
+        "context": "if (null === (a = t.children) || void 0 === a",
+        "position": 880552
+      },
+      {
+        "match": "child",
+        "context": "                    children: i              ",
+        "position": 881156
+      },
+      {
+        "match": "child",
+        "context": "urn null === (o = t.children) || void 0 === o",
+        "position": 881475
+      },
+      {
+        "match": "child",
+        "context": "                    children: [(0, Xi.jsx)(ZO",
+        "position": 882393
+      },
+      {
+        "match": "child",
+        "context": "            keys: [\"children.name\"]          ",
+        "position": 882864
+      },
+      {
+        "match": "child",
+        "context": "place\", \"message\", \"children\"];              ",
+        "position": 884707
+      },
+      {
+        "match": "child",
+        "context": "              i = t.children,                ",
+        "position": 887213
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(AO.",
+        "position": 888346
+      },
+      {
+        "match": "child",
+        "context": "                    children: t.subMenuList ?",
+        "position": 898846
+      },
+      {
+        "match": "child",
+        "context": "          var t = e.children,                ",
+        "position": 905484
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsx)(Ch.",
+        "position": 913346
+      },
+      {
+        "match": "child",
+        "context": "                    children: (0, Xi.jsxs)(Rj",
+        "position": 913874
+      },
+      {
+        "match": "child",
+        "context": "                    children: c(t.name || \"\")",
+        "position": 914868
+      },
+      {
+        "match": "child",
+        "context": "                    children: r              ",
+        "position": 917773
+      },
+      {
+        "match": "child",
+        "context": "          var r = t.children,                ",
+        "position": 920389
+      },
+      {
+        "match": "child",
+        "context": "           path: Ae.childAdmin,              ",
+        "position": 923718
+      },
+      {
+        "match": "child",
+        "context": "     activePath: Ae.childAdmin,              ",
+        "position": 923797
+      },
+      {
+        "match": "child",
+        "context": "    projectName: kj.childAdmin,              ",
+        "position": 924085
+      },
+      {
+        "match": "child",
+        "context": "           path: Ae.childChat,               ",
+        "position": 924405
+      },
+      {
+        "match": "child",
+        "context": "     activePath: Ae.childChat,               ",
+        "position": 924483
+      },
+      {
+        "match": "child",
+        "context": "    projectName: kj.childChat,               ",
+        "position": 924766
+      },
+      {
+        "match": "child",
+        "context": "           path: Ae.childTranslate,          ",
+        "position": 925085
+      },
+      {
+        "match": "child",
+        "context": "     activePath: Ae.childTranslate,          ",
+        "position": 925168
+      },
+      {
+        "match": "child",
+        "context": "    projectName: kj.childTranslate,          ",
+        "position": 925466
+      },
+      {
+        "match": "child",
+        "context": "urn e.paths = [], e.children || (e.children =",
+        "position": 939194
+      },
+      {
+        "match": "child",
+        "context": "], e.children || (e.children = []), e        ",
+        "position": 939209
+      }
+    ]
+  },
+  "crypto_references": {
+    "count": 65,
+    "values": [
+      "(e) {                     e[e.coinNotEnough = 22] = \"coinNotEnou",
+      "(null == a ? void 0 : a.accesstoken),",
+      ", ay.CancelToken = Xv().CancelToken, ay.isCancel = Xv().isCancel;",
+      ".rechargeCoin = 2] = \"rechargeCoin\", e[e.rechargeGem = 3] = \"rec",
+      "1] = \"joinRoom\", e[e.rechargeCoin = 2] = \"rechargeCoin\", e[e.re",
+      "= n ? void 0 : n.resetPasswordToken",
+      "] = \"coinNotEnough\", e[e.agentCoinNotEnough = 101] = \"agentCoinN",
+      "case Pe.tokenInvalid:",
+      "dataIndex: \"coin\"",
+      "e[e.coinNotEnough = 22] = \"coinNotEnough\", e[e.agentCoinNotEn",
+      "enumKey: \"Coin\"                         },",
+      "enumKey: \"FunCoin\"                         },",
+      "enumKey: \"JoCoin\"                         },",
+      "enumKey: \"TaCoin\"                         },",
+      "id\", e[e.tokenInvalid = 5] = \"tokenInvalid\", e[e.messageAuthKeyEm",
+      "if ([ic.Gift, ic.Coin, ic.Marbles, ic.LuckyBagGiftC",
+      "in = 2] = \"rechargeCoin\", e[e.rechargeGem = 3] = \"rechargeGem\"",
+      "inRoom = 1] = \"joinRoom\", e[e.rechargeCoin = 2] = \"rechargeCoin\", e[",
+      "lid = 4] = \"userInvalid\", e[e.tokenInvalid = 5] = \"tokenInvalid\",",
+      "null == n ? void 0 : n.accesstoken,",
+      "oin\", e[e.rechargeGem = 3] = \"rechargeGem\"                 }(ji || (",
+      "om\", e[e.rechargeCoin = 2] = \"rechargeCoin\", e[e.rechargeGem = 3] =",
+      "resetPasswordToken: null === (n = i.adminMember)",
+      "return \"vochat://wallet/recharge?index=0\"",
+      "return \"vochat://wallet/recharge?index=1\"",
+      "schema: \"fallalite://wallet/coin_detail\",",
+      "schema: \"fallalite://wallet/diamond_detail\",",
+      "schema: \"fallalite://wallet/first/alert/reward\",",
+      "schema: \"fallalite://wallet/recharge?index=0\",",
+      "schema: \"fallalite://wallet/recharge?index=1\",",
+      "schema: \"fallalite://wallet/recharge_detail\",",
+      "schema: \"joymi://wallet/coin_detail\",",
+      "schema: \"joymi://wallet/diamond_detail\",",
+      "schema: \"joymi://wallet/first/alert/reward\",",
+      "schema: \"joymi://wallet/recharge?index=0\",",
+      "schema: \"joymi://wallet/recharge?index=1\",",
+      "schema: \"joymi://wallet/recharge_detail\",",
+      "schema: \"taeal://wallet/coin_detail\",",
+      "schema: \"taeal://wallet/diamond_detail\",",
+      "schema: \"taeal://wallet/first/alert/reward\",",
+      "schema: \"taeal://wallet/recharge?index=0\",",
+      "schema: \"taeal://wallet/recharge?index=1\",",
+      "schema: \"taeal://wallet/recharge_detail\",",
+      "schema: \"toofun://wallet/coin_detail\",",
+      "schema: \"toofun://wallet/diamond_detail\",",
+      "schema: \"toofun://wallet/first/alert/reward\",",
+      "schema: \"toofun://wallet/recharge?index=0\",",
+      "schema: \"toofun://wallet/recharge?index=1\",",
+      "schema: \"toofun://wallet/recharge_detail\",",
+      "schema: \"vochat://wallet/coin_detail\",",
+      "schema: \"vochat://wallet/diamond_detail\",",
+      "schema: \"vochat://wallet/first/alert/reward\",",
+      "schema: \"vochat://wallet/recharge?index=0\",",
+      "schema: \"vochat://wallet/recharge?index=1\",",
+      "schema: \"vochat://wallet/recharge_detail\",",
+      "schema: \"yigo://wallet/agency/recharge\",",
+      "schema: \"yigo://wallet/coin_detail\",",
+      "schema: \"yigo://wallet/diamond_detail\",",
+      "schema: \"yigo://wallet/first/alert/reward\",",
+      "schema: \"yigo://wallet/recharge?index=0\",",
+      "schema: \"yigo://wallet/recharge?index=1\",",
+      "schema: \"yigo://wallet/recharge_detail\",",
+      "tCoinNotEnough = 101] = \"agentCoinNotEnough\", e[e.filterToast =",
+      "uired = 1 !== r, [ic.Gift, ic.Coin, ic.Marbles, ic.LuckyBagGiftC",
+      "})), ay.CancelToken = Xv().CancelToken, ay.isCanc"
+    ]
+  },
+  "api_keys_tokens_secrets": {
+    "appid": {
+      "count": 9,
+      "values": [
+        "SDKAppID: 40000226",
+        "SDKAppID: 40000227",
+        "SDKAppID: 40000260",
+        "SDKAppID: 40000278",
+        "SDKAppID: 40000320",
+        "SDKAppID: 40000333",
+        "SDKAppID: 40000424",
+        "SDKAppID: 40000432",
+        "SDKAppID: 40000613"
+      ]
+    },
+    "password_config": {
+      "count": 24,
+      "values": [
+        "\"Input.TextArea\", e.Password = \"Password\", e.Select = \"Select\", e.Switch = \"Switch\", e.T",
+        "\"x-component\": Be.Password,",
+        "& (i.loginApiParams.password = t.password), i.showReset = !1;",
+        ": n.resetPasswordToken",
+        "= r.username, a = r.password, l.next = 6, w({",
+        "= t.username, a = t.password, o = Qe(La(), \"/api/web/admin/sent/verify/code\"), i.next =",
+        "Password: d.Password",
+        "Password: d.Password,",
+        "autoComplete: \"new-password\"",
+        "autoComplete: \"new-password\",",
+        "initialPassword,",
+        "initialPassword: null === (r = i.adminMember) || void 0 === r ? void 0 : r.",
+        "ns/string\", e.stringPassword = \"#/definitions/stringPassword\", e.stringTextArea = \"#/def",
+        "o = n.password;",
+        "password: \"\"",
+        "password: \"\",",
+        "password: Ul.getStringType({",
+        "password: Yl.getStringType({",
+        "password: a",
+        "passwordConfirm: \"\"",
+        "passwordConfirm: Yl.getStringType({",
+        "pi/web/admin/member/password/reset\");",
+        "resetPasswordToken: null === (n = i.adminMember) || void 0 === n ? void 0",
+        "stringPassword: {"
+      ]
+    }
+  },
+  "summary": {
+    "total_unique_routes": 74,
+    "total_unique_domains": 51,
+    "total_unique_urls": 51,
+    "total_unique_ip_addresses": 0,
+    "total_unique_tron_addresses": 0,
+    "total_unique_geo_codes": 10,
+    "total_child_references": 249,
+    "total_crypto_references": 65
+  }
+}
