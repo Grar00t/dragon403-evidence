@@ -108,12 +108,28 @@ Formal cyber incident reports and forensic payloads are active with:
 
 ---
 
+## CROSS-REPOSITORY AUDIT
+
+This investigation spans multiple repositories. A comprehensive audit was conducted to identify verified evidence, unverified claims, and AI-generated content across all locations.
+
+See [CROSS_REPOSITORY_AUDIT.md](CROSS_REPOSITORY_AUDIT.md) for the full report. Key findings:
+
+- **Verified (Tier 1):** 74 routes, 51 URLs, 10 geo codes, 65 crypto strings — all mechanically extracted from `falla_beautified.js`
+- **Plausible but unverified (Tier 2):** 7 TRON addresses (from network analysis, not source code), app attribution matrix (5 apps, HIGH confidence), ffuf results with HTTP status codes
+- **AI-generated/fabricated (Tier 3):** Fake `fallaadmin.js` on GitLab (115 lines vs real 362KB), inflated TRON count (33 claimed, 7 actual), CORS claims (0 found), wrong domain names in infrastructure map, duplicate SHA-256 hashes across different files
+
+See [HILO_ENTITY_VERIFICATION.md](HILO_ENTITY_VERIFICATION.md) for HILO entity disambiguation (INSUFFICIENT EVIDENCE to link hiloconn.com chat app to HILO CoinMarketCap token).
+
+---
+
 ## KNOWN LIMITATIONS
 
 - **Hash corrections applied:** The original README listed an MD5 hash (32 characters) labeled as SHA-256 for `falla_admin.js`. All hashes in this version were recomputed using `sha256sum`.
 - **Address count corrected:** `extracted_tron_addresses.json` originally claimed `total_found: 33` but listed only 7 addresses. Automated extraction found 0 TRON addresses in the source code. `total_found` corrected to 7.
 - **Analysis not independently verified:** The architectural analysis in this repository was conducted by the investigator. It has not been reviewed or confirmed by an independent third party.
 - **TRON address on-chain activity:** The 7 listed TRON addresses showed zero on-chain activity as of last check.
+- **AI-generated content identified:** Multiple files across GitLab repositories contain AI-generated content (fabricated source files, inflated counts, wrong domain names, template-only analysis). See [CROSS_REPOSITORY_AUDIT.md](CROSS_REPOSITORY_AUDIT.md) for the complete list.
+- **GitLab repos contain uncorrected errors:** The GitLab version of `extracted_tron_addresses.json` still claims `total_found: 33`. Only the GitHub version has been corrected.
 
 ---
 **Investigator:** Sulaiman Alshammari (Dragon403)
